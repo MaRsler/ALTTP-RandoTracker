@@ -330,7 +330,7 @@ Partial Class Form1
         '
         Me.GTLabel.AutoSize = True
         Me.GTLabel.BackColor = System.Drawing.Color.Red
-        Me.GTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTLabel.ForeColor = System.Drawing.Color.Black
         Me.GTLabel.Location = New System.Drawing.Point(3, 328)
         Me.GTLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -346,7 +346,7 @@ Partial Class Form1
         '
         Me.AGLabel.AutoSize = True
         Me.AGLabel.BackColor = System.Drawing.Color.Red
-        Me.AGLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGLabel.ForeColor = System.Drawing.Color.Black
         Me.AGLabel.Location = New System.Drawing.Point(205, 186)
         Me.AGLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -362,7 +362,7 @@ Partial Class Form1
         '
         Me.HCLabel.AutoSize = True
         Me.HCLabel.BackColor = System.Drawing.Color.Yellow
-        Me.HCLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCLabel.ForeColor = System.Drawing.Color.Black
         Me.HCLabel.Location = New System.Drawing.Point(3, 184)
         Me.HCLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -377,7 +377,7 @@ Partial Class Form1
         '
         Me.TRLabel2.AutoSize = True
         Me.TRLabel2.BackColor = System.Drawing.Color.Black
-        Me.TRLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel2.ForeColor = System.Drawing.Color.White
         Me.TRLabel2.Location = New System.Drawing.Point(293, 143)
         Me.TRLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -394,7 +394,7 @@ Partial Class Form1
         '
         Me.MMLabel2.AutoSize = True
         Me.MMLabel2.BackColor = System.Drawing.Color.Black
-        Me.MMLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel2.ForeColor = System.Drawing.Color.White
         Me.MMLabel2.Location = New System.Drawing.Point(293, 108)
         Me.MMLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -411,7 +411,7 @@ Partial Class Form1
         '
         Me.IPLabel2.AutoSize = True
         Me.IPLabel2.BackColor = System.Drawing.Color.Black
-        Me.IPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel2.ForeColor = System.Drawing.Color.White
         Me.IPLabel2.Location = New System.Drawing.Point(293, 73)
         Me.IPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -428,7 +428,7 @@ Partial Class Form1
         '
         Me.TTLabel2.AutoSize = True
         Me.TTLabel2.BackColor = System.Drawing.Color.Black
-        Me.TTLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel2.ForeColor = System.Drawing.Color.White
         Me.TTLabel2.Location = New System.Drawing.Point(293, 38)
         Me.TTLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -445,7 +445,7 @@ Partial Class Form1
         '
         Me.SWLabel2.AutoSize = True
         Me.SWLabel2.BackColor = System.Drawing.Color.Black
-        Me.SWLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel2.ForeColor = System.Drawing.Color.White
         Me.SWLabel2.Location = New System.Drawing.Point(293, 3)
         Me.SWLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -462,7 +462,7 @@ Partial Class Form1
         '
         Me.SPLabel2.AutoSize = True
         Me.SPLabel2.BackColor = System.Drawing.Color.Black
-        Me.SPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel2.ForeColor = System.Drawing.Color.White
         Me.SPLabel2.Location = New System.Drawing.Point(223, 143)
         Me.SPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -479,7 +479,7 @@ Partial Class Form1
         '
         Me.PODLabel2.AutoSize = True
         Me.PODLabel2.BackColor = System.Drawing.Color.Black
-        Me.PODLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel2.ForeColor = System.Drawing.Color.White
         Me.PODLabel2.Location = New System.Drawing.Point(223, 108)
         Me.PODLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -496,7 +496,7 @@ Partial Class Form1
         '
         Me.TOHLabel2.AutoSize = True
         Me.TOHLabel2.BackColor = System.Drawing.Color.Black
-        Me.TOHLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel2.ForeColor = System.Drawing.Color.White
         Me.TOHLabel2.Location = New System.Drawing.Point(223, 73)
         Me.TOHLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -513,7 +513,7 @@ Partial Class Form1
         '
         Me.DPLabel2.AutoSize = True
         Me.DPLabel2.BackColor = System.Drawing.Color.Black
-        Me.DPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel2.ForeColor = System.Drawing.Color.White
         Me.DPLabel2.Location = New System.Drawing.Point(223, 38)
         Me.DPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -530,7 +530,7 @@ Partial Class Form1
         '
         Me.EPLabel2.AutoSize = True
         Me.EPLabel2.BackColor = System.Drawing.Color.Black
-        Me.EPLabel2.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPLabel2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel2.ForeColor = System.Drawing.Color.White
         Me.EPLabel2.Location = New System.Drawing.Point(223, 3)
         Me.EPLabel2.Margin = New System.Windows.Forms.Padding(0)
@@ -1733,7 +1733,7 @@ Partial Class Form1
         '
         Me.TRLabel.AutoSize = True
         Me.TRLabel.BackColor = System.Drawing.Color.Red
-        Me.TRLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRLabel.ForeColor = System.Drawing.Color.Black
         Me.TRLabel.Location = New System.Drawing.Point(205, 306)
         Me.TRLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1748,7 +1748,7 @@ Partial Class Form1
         '
         Me.MMLabel.AutoSize = True
         Me.MMLabel.BackColor = System.Drawing.Color.Red
-        Me.MMLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMLabel.ForeColor = System.Drawing.Color.Black
         Me.MMLabel.Location = New System.Drawing.Point(205, 282)
         Me.MMLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1763,7 +1763,7 @@ Partial Class Form1
         '
         Me.IPLabel.AutoSize = True
         Me.IPLabel.BackColor = System.Drawing.Color.Red
-        Me.IPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPLabel.ForeColor = System.Drawing.Color.Black
         Me.IPLabel.Location = New System.Drawing.Point(205, 258)
         Me.IPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1778,7 +1778,7 @@ Partial Class Form1
         '
         Me.TTLabel.AutoSize = True
         Me.TTLabel.BackColor = System.Drawing.Color.Red
-        Me.TTLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTLabel.ForeColor = System.Drawing.Color.Black
         Me.TTLabel.Location = New System.Drawing.Point(205, 234)
         Me.TTLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1793,7 +1793,7 @@ Partial Class Form1
         '
         Me.SWLabel.AutoSize = True
         Me.SWLabel.BackColor = System.Drawing.Color.Red
-        Me.SWLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWLabel.ForeColor = System.Drawing.Color.Black
         Me.SWLabel.Location = New System.Drawing.Point(205, 210)
         Me.SWLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1808,7 +1808,7 @@ Partial Class Form1
         '
         Me.SPLabel.AutoSize = True
         Me.SPLabel.BackColor = System.Drawing.Color.Red
-        Me.SPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPLabel.ForeColor = System.Drawing.Color.Black
         Me.SPLabel.Location = New System.Drawing.Point(3, 304)
         Me.SPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1823,7 +1823,7 @@ Partial Class Form1
         '
         Me.PODLabel.AutoSize = True
         Me.PODLabel.BackColor = System.Drawing.Color.Red
-        Me.PODLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODLabel.ForeColor = System.Drawing.Color.Black
         Me.PODLabel.Location = New System.Drawing.Point(3, 280)
         Me.PODLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1838,7 +1838,7 @@ Partial Class Form1
         '
         Me.TOHLabel.AutoSize = True
         Me.TOHLabel.BackColor = System.Drawing.Color.Red
-        Me.TOHLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHLabel.ForeColor = System.Drawing.Color.Black
         Me.TOHLabel.Location = New System.Drawing.Point(3, 256)
         Me.TOHLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1853,7 +1853,7 @@ Partial Class Form1
         '
         Me.DPLabel.AutoSize = True
         Me.DPLabel.BackColor = System.Drawing.Color.Red
-        Me.DPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPLabel.ForeColor = System.Drawing.Color.Black
         Me.DPLabel.Location = New System.Drawing.Point(3, 232)
         Me.DPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1868,7 +1868,7 @@ Partial Class Form1
         '
         Me.EPLabel.AutoSize = True
         Me.EPLabel.BackColor = System.Drawing.Color.Yellow
-        Me.EPLabel.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPLabel.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPLabel.ForeColor = System.Drawing.Color.Black
         Me.EPLabel.Location = New System.Drawing.Point(3, 208)
         Me.EPLabel.Margin = New System.Windows.Forms.Padding(0)
@@ -1894,7 +1894,7 @@ Partial Class Form1
         Me.ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.ItemHeight = 13
-        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity w/ Swords", "Retro w/ Swords", "Swordless", "Keysanity Swordless", "Retro Swordless"})
+        Me.ComboBox1.Items.AddRange(New Object() {"Standard/Open", "Keysanity S/O w/ Swords", "Retro S/O w/ Swords", "Inverted", "Inverted Keysanity w/ Sword", "Inverted Retro w/ Swords", "S/O Swordless", "S/O Keysanity Swordless", "S/O Retro Swordless", "Inverted Swordless", "Inverted Keysanity Swordless", "Inverted Retro Swordless"})
         Me.ComboBox1.Location = New System.Drawing.Point(74, 462)
         Me.ComboBox1.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.ComboBox1.Name = "ComboBox1"
@@ -1944,7 +1944,7 @@ Partial Class Form1
         '
         Me.AGPrizes.AutoSize = True
         Me.AGPrizes.BackColor = System.Drawing.Color.Black
-        Me.AGPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGPrizes.ForeColor = System.Drawing.Color.White
         Me.AGPrizes.Image = CType(resources.GetObject("AGPrizes.Image"), System.Drawing.Image)
         Me.AGPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2160,7 +2160,7 @@ Partial Class Form1
         '
         Me.GTChests.AutoSize = True
         Me.GTChests.BackColor = System.Drawing.Color.Black
-        Me.GTChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTChests.ForeColor = System.Drawing.Color.White
         Me.GTChests.Image = CType(resources.GetObject("GTChests.Image"), System.Drawing.Image)
         Me.GTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2178,7 +2178,7 @@ Partial Class Form1
         '
         Me.TRChests.AutoSize = True
         Me.TRChests.BackColor = System.Drawing.Color.Black
-        Me.TRChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRChests.ForeColor = System.Drawing.Color.White
         Me.TRChests.Image = CType(resources.GetObject("TRChests.Image"), System.Drawing.Image)
         Me.TRChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2195,7 +2195,7 @@ Partial Class Form1
         '
         Me.MMChests.AutoSize = True
         Me.MMChests.BackColor = System.Drawing.Color.Black
-        Me.MMChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMChests.ForeColor = System.Drawing.Color.White
         Me.MMChests.Image = CType(resources.GetObject("MMChests.Image"), System.Drawing.Image)
         Me.MMChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2212,7 +2212,7 @@ Partial Class Form1
         '
         Me.IPChests.AutoSize = True
         Me.IPChests.BackColor = System.Drawing.Color.Black
-        Me.IPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPChests.ForeColor = System.Drawing.Color.White
         Me.IPChests.Image = CType(resources.GetObject("IPChests.Image"), System.Drawing.Image)
         Me.IPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2229,7 +2229,7 @@ Partial Class Form1
         '
         Me.TTChests.AutoSize = True
         Me.TTChests.BackColor = System.Drawing.Color.Black
-        Me.TTChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTChests.ForeColor = System.Drawing.Color.White
         Me.TTChests.Image = CType(resources.GetObject("TTChests.Image"), System.Drawing.Image)
         Me.TTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2246,7 +2246,7 @@ Partial Class Form1
         '
         Me.SWChests.AutoSize = True
         Me.SWChests.BackColor = System.Drawing.Color.Black
-        Me.SWChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWChests.ForeColor = System.Drawing.Color.White
         Me.SWChests.Image = CType(resources.GetObject("SWChests.Image"), System.Drawing.Image)
         Me.SWChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2263,7 +2263,7 @@ Partial Class Form1
         '
         Me.AGChests.AutoSize = True
         Me.AGChests.BackColor = System.Drawing.Color.Black
-        Me.AGChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGChests.ForeColor = System.Drawing.Color.White
         Me.AGChests.Image = CType(resources.GetObject("AGChests.Image"), System.Drawing.Image)
         Me.AGChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2281,7 +2281,7 @@ Partial Class Form1
         '
         Me.SPChests.AutoSize = True
         Me.SPChests.BackColor = System.Drawing.Color.Black
-        Me.SPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPChests.ForeColor = System.Drawing.Color.White
         Me.SPChests.Image = CType(resources.GetObject("SPChests.Image"), System.Drawing.Image)
         Me.SPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2298,7 +2298,7 @@ Partial Class Form1
         '
         Me.PODChests.AutoSize = True
         Me.PODChests.BackColor = System.Drawing.Color.Black
-        Me.PODChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODChests.ForeColor = System.Drawing.Color.White
         Me.PODChests.Image = CType(resources.GetObject("PODChests.Image"), System.Drawing.Image)
         Me.PODChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2315,7 +2315,7 @@ Partial Class Form1
         '
         Me.TOHChests.AutoSize = True
         Me.TOHChests.BackColor = System.Drawing.Color.Black
-        Me.TOHChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHChests.ForeColor = System.Drawing.Color.White
         Me.TOHChests.Image = CType(resources.GetObject("TOHChests.Image"), System.Drawing.Image)
         Me.TOHChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2332,7 +2332,7 @@ Partial Class Form1
         '
         Me.DPChests.AutoSize = True
         Me.DPChests.BackColor = System.Drawing.Color.Black
-        Me.DPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPChests.ForeColor = System.Drawing.Color.White
         Me.DPChests.Image = CType(resources.GetObject("DPChests.Image"), System.Drawing.Image)
         Me.DPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2349,7 +2349,7 @@ Partial Class Form1
         '
         Me.EPChests.AutoSize = True
         Me.EPChests.BackColor = System.Drawing.Color.Black
-        Me.EPChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPChests.ForeColor = System.Drawing.Color.Yellow
         Me.EPChests.Image = CType(resources.GetObject("EPChests.Image"), System.Drawing.Image)
         Me.EPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2366,7 +2366,7 @@ Partial Class Form1
         '
         Me.HCChests.AutoSize = True
         Me.HCChests.BackColor = System.Drawing.Color.Black
-        Me.HCChests.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCChests.ForeColor = System.Drawing.Color.Yellow
         Me.HCChests.Image = CType(resources.GetObject("HCChests.Image"), System.Drawing.Image)
         Me.HCChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -2995,7 +2995,7 @@ Partial Class Form1
         '
         Me.MMPrizes.AutoSize = True
         Me.MMPrizes.BackColor = System.Drawing.Color.Black
-        Me.MMPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMPrizes.ForeColor = System.Drawing.Color.White
         Me.MMPrizes.Image = CType(resources.GetObject("MMPrizes.Image"), System.Drawing.Image)
         Me.MMPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3012,7 +3012,7 @@ Partial Class Form1
         '
         Me.IPPrizes.AutoSize = True
         Me.IPPrizes.BackColor = System.Drawing.Color.Black
-        Me.IPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPPrizes.ForeColor = System.Drawing.Color.White
         Me.IPPrizes.Image = CType(resources.GetObject("IPPrizes.Image"), System.Drawing.Image)
         Me.IPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3029,7 +3029,7 @@ Partial Class Form1
         '
         Me.TTPrizes.AutoSize = True
         Me.TTPrizes.BackColor = System.Drawing.Color.Black
-        Me.TTPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTPrizes.ForeColor = System.Drawing.Color.White
         Me.TTPrizes.Image = CType(resources.GetObject("TTPrizes.Image"), System.Drawing.Image)
         Me.TTPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3046,7 +3046,7 @@ Partial Class Form1
         '
         Me.SWPrizes.AutoSize = True
         Me.SWPrizes.BackColor = System.Drawing.Color.Black
-        Me.SWPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWPrizes.ForeColor = System.Drawing.Color.White
         Me.SWPrizes.Image = CType(resources.GetObject("SWPrizes.Image"), System.Drawing.Image)
         Me.SWPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3203,7 +3203,7 @@ Partial Class Form1
         '
         Me.TRPrizes.AutoSize = True
         Me.TRPrizes.BackColor = System.Drawing.Color.Black
-        Me.TRPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRPrizes.ForeColor = System.Drawing.Color.White
         Me.TRPrizes.Image = CType(resources.GetObject("TRPrizes.Image"), System.Drawing.Image)
         Me.TRPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3220,7 +3220,7 @@ Partial Class Form1
         '
         Me.SPPrizes.AutoSize = True
         Me.SPPrizes.BackColor = System.Drawing.Color.Black
-        Me.SPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPPrizes.ForeColor = System.Drawing.Color.White
         Me.SPPrizes.Image = CType(resources.GetObject("SPPrizes.Image"), System.Drawing.Image)
         Me.SPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3237,7 +3237,7 @@ Partial Class Form1
         '
         Me.PODPrizes.AutoSize = True
         Me.PODPrizes.BackColor = System.Drawing.Color.Black
-        Me.PODPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODPrizes.ForeColor = System.Drawing.Color.White
         Me.PODPrizes.Image = CType(resources.GetObject("PODPrizes.Image"), System.Drawing.Image)
         Me.PODPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3254,7 +3254,7 @@ Partial Class Form1
         '
         Me.TOHPrizes.AutoSize = True
         Me.TOHPrizes.BackColor = System.Drawing.Color.Black
-        Me.TOHPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHPrizes.ForeColor = System.Drawing.Color.White
         Me.TOHPrizes.Image = CType(resources.GetObject("TOHPrizes.Image"), System.Drawing.Image)
         Me.TOHPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3271,7 +3271,7 @@ Partial Class Form1
         '
         Me.DPPrizes.AutoSize = True
         Me.DPPrizes.BackColor = System.Drawing.Color.Black
-        Me.DPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPPrizes.ForeColor = System.Drawing.Color.White
         Me.DPPrizes.Image = CType(resources.GetObject("DPPrizes.Image"), System.Drawing.Image)
         Me.DPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3288,7 +3288,7 @@ Partial Class Form1
         '
         Me.EPPrizes.AutoSize = True
         Me.EPPrizes.BackColor = System.Drawing.Color.Black
-        Me.EPPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPPrizes.ForeColor = System.Drawing.Color.White
         Me.EPPrizes.Image = CType(resources.GetObject("EPPrizes.Image"), System.Drawing.Image)
         Me.EPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3305,7 +3305,7 @@ Partial Class Form1
         '
         Me.HCPrizes.AutoSize = True
         Me.HCPrizes.BackColor = System.Drawing.Color.Black
-        Me.HCPrizes.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCPrizes.ForeColor = System.Drawing.Color.White
         Me.HCPrizes.Image = CType(resources.GetObject("HCPrizes.Image"), System.Drawing.Image)
         Me.HCPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3596,7 +3596,7 @@ Partial Class Form1
         '
         Me.MMKeys.AutoSize = True
         Me.MMKeys.BackColor = System.Drawing.Color.Black
-        Me.MMKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MMKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMKeys.ForeColor = System.Drawing.Color.White
         Me.MMKeys.Image = CType(resources.GetObject("MMKeys.Image"), System.Drawing.Image)
         Me.MMKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3613,7 +3613,7 @@ Partial Class Form1
         '
         Me.IPKeys.AutoSize = True
         Me.IPKeys.BackColor = System.Drawing.Color.Black
-        Me.IPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.IPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPKeys.ForeColor = System.Drawing.Color.White
         Me.IPKeys.Image = CType(resources.GetObject("IPKeys.Image"), System.Drawing.Image)
         Me.IPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3630,7 +3630,7 @@ Partial Class Form1
         '
         Me.TTKeys.AutoSize = True
         Me.TTKeys.BackColor = System.Drawing.Color.Black
-        Me.TTKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TTKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTKeys.ForeColor = System.Drawing.Color.White
         Me.TTKeys.Image = CType(resources.GetObject("TTKeys.Image"), System.Drawing.Image)
         Me.TTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3647,7 +3647,7 @@ Partial Class Form1
         '
         Me.SWKeys.AutoSize = True
         Me.SWKeys.BackColor = System.Drawing.Color.Black
-        Me.SWKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SWKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWKeys.ForeColor = System.Drawing.Color.White
         Me.SWKeys.Image = CType(resources.GetObject("SWKeys.Image"), System.Drawing.Image)
         Me.SWKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3664,7 +3664,7 @@ Partial Class Form1
         '
         Me.TRKeys.AutoSize = True
         Me.TRKeys.BackColor = System.Drawing.Color.Black
-        Me.TRKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TRKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRKeys.ForeColor = System.Drawing.Color.White
         Me.TRKeys.Image = CType(resources.GetObject("TRKeys.Image"), System.Drawing.Image)
         Me.TRKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3681,7 +3681,7 @@ Partial Class Form1
         '
         Me.AGKeys.AutoSize = True
         Me.AGKeys.BackColor = System.Drawing.Color.Black
-        Me.AGKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.AGKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGKeys.ForeColor = System.Drawing.Color.White
         Me.AGKeys.Image = Global.RandoTracker.My.Resources.Resources.keysmall
         Me.AGKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3699,7 +3699,7 @@ Partial Class Form1
         '
         Me.GTKeys.AutoSize = True
         Me.GTKeys.BackColor = System.Drawing.Color.Black
-        Me.GTKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GTKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTKeys.ForeColor = System.Drawing.Color.White
         Me.GTKeys.Image = CType(resources.GetObject("GTKeys.Image"), System.Drawing.Image)
         Me.GTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3717,7 +3717,7 @@ Partial Class Form1
         '
         Me.SPKeys.AutoSize = True
         Me.SPKeys.BackColor = System.Drawing.Color.Black
-        Me.SPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPKeys.ForeColor = System.Drawing.Color.White
         Me.SPKeys.Image = CType(resources.GetObject("SPKeys.Image"), System.Drawing.Image)
         Me.SPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3734,7 +3734,7 @@ Partial Class Form1
         '
         Me.PODKeys.AutoSize = True
         Me.PODKeys.BackColor = System.Drawing.Color.Black
-        Me.PODKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.PODKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODKeys.ForeColor = System.Drawing.Color.White
         Me.PODKeys.Image = CType(resources.GetObject("PODKeys.Image"), System.Drawing.Image)
         Me.PODKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3751,7 +3751,7 @@ Partial Class Form1
         '
         Me.TOHKeys.AutoSize = True
         Me.TOHKeys.BackColor = System.Drawing.Color.Black
-        Me.TOHKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TOHKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHKeys.ForeColor = System.Drawing.Color.White
         Me.TOHKeys.Image = CType(resources.GetObject("TOHKeys.Image"), System.Drawing.Image)
         Me.TOHKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3768,7 +3768,7 @@ Partial Class Form1
         '
         Me.DPKeys.AutoSize = True
         Me.DPKeys.BackColor = System.Drawing.Color.Black
-        Me.DPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPKeys.ForeColor = System.Drawing.Color.White
         Me.DPKeys.Image = CType(resources.GetObject("DPKeys.Image"), System.Drawing.Image)
         Me.DPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3785,7 +3785,7 @@ Partial Class Form1
         '
         Me.EPKeys.AutoSize = True
         Me.EPKeys.BackColor = System.Drawing.Color.Black
-        Me.EPKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPKeys.ForeColor = System.Drawing.Color.White
         Me.EPKeys.Image = CType(resources.GetObject("EPKeys.Image"), System.Drawing.Image)
         Me.EPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -3802,7 +3802,7 @@ Partial Class Form1
         '
         Me.HCKeys.AutoSize = True
         Me.HCKeys.BackColor = System.Drawing.Color.Black
-        Me.HCKeys.Font = New System.Drawing.Font("Arial Narrow", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HCKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCKeys.ForeColor = System.Drawing.Color.White
         Me.HCKeys.Image = CType(resources.GetObject("HCKeys.Image"), System.Drawing.Image)
         Me.HCKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -4147,7 +4147,7 @@ Partial Class Form1
         Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(40, 39)
         Me.Name = "Form1"
-        Me.Text = "ALTTP RandoTracker (Logic v8.29)"
+        Me.Text = "ALTTP RandoTracker (Logic v30)"
         CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).EndInit()
