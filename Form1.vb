@@ -1409,8 +1409,11 @@ Public Class Form1
                     CCLR(LW45)
                 End If
                 CCLR(LW43)
-                
-            End If
+            Else   
+                COFF(LW42)
+                CSQB(LW43)
+                COFF(LW45)
+            End IF
             CCLR(LW44)
         ElseIf (Glove = 2 Or (Hookshot And Pearl)) And Glove Then
             If Pearl Then
