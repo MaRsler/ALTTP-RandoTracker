@@ -1596,7 +1596,7 @@ Public Class Form1
         End If
 
         '' Hookshot Cave - Death Mountain access (Lamp prevents sequence break if Glove is used), Pearl, Mitt, Hookshot or Hammer+Mirror+Boots (Partially blocked without Hookshot)
-        If Hookshot And (Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc()) Then
+        If Hookshot And ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) Then
            CCLR(DW15)
            DW15.TextAlign = ContentAlignment.MiddleCenter
            DW15Boots.Visible = False
@@ -1604,7 +1604,7 @@ Public Class Form1
            CSQB(DW15)
            DW15.TextAlign = ContentAlignment.MiddleCenter
            DW15Boots.Visible = False
-        ElseIf Boots And (Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc()) Then
+        ElseIf Boots And ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) Then
             COFF(DW15)
             DW15.TextAlign = ContentAlignment.MiddleLeft
             DW15Boots.Visible = True
