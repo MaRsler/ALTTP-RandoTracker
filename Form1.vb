@@ -1225,7 +1225,7 @@ Public Class Form1
                 COFF(LW20)
             Else
                 COFF(LW9)
-                CPCLR(LW10)
+                CSQB(LW10)
                 CCLR(LW11)
                 COFF(LW12)
                 COFF(LW18)
@@ -1269,8 +1269,10 @@ Public Class Form1
         End If
 
         '' Desert Ledge - Desert Palace access (Book and LW Access)
-        If Book And InvertedLWAcc() Then
+        If Book And Pearl And InvertedLWAcc() Then
             CCLR(LW22)
+        ElseIf Book And InvertedLWAcc() Then
+            CSQB(LW22)
         Else
             COFF(LW22)
         End If
@@ -1686,7 +1688,7 @@ Public Class Form1
 
     Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
         DPLedge = (DPLedge + 1) Mod 3
-        SwitchChestIcon(sender, e, Floating)
+        SwitchChestIcon(sender, e, DPLedge)
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
