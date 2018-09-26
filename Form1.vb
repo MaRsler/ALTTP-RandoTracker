@@ -505,14 +505,6 @@ Public Class Form1
         End If
     End Sub
 
-    Private Sub ChangeReward()
-        Dim Val as Integer = 0
-        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then Val = -1
-        For Each Reward as Integer in {EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward}
-            Reward = Val
-        Next
-    End Sub
-
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
         Select Case ComboBox1.SelectedIndex
             Case 0,3,6,9
@@ -522,6 +514,19 @@ Public Class Form1
                     SwordButton.Visible = True
                 End If
                 HideKeysMap(1)
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                For Each Pic in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton, TRButton}
+                    Pic.Image = My.Resources.crystal
+                Next
                 EPBoss.Left = 115
                 DPBoss.Left = 115
                 HeraBoss.Left = 115
@@ -532,10 +537,6 @@ Public Class Form1
                 IPBoss.Left = 317
                 MMBoss.Left = 317
                 TRBoss.Left = 317
-                ChangeReward()
-                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
-                    Pic.Image = My.Resources.crystal
-                Next
                 For Each Label as System.Windows.Forms.Label in {HCChests, AGChests, EPChests, DPChests, TOHChests, PODChests, SPChests, SWChests, TTChests, IPChests, MMChests, TRChests, GTChests}
                     Label.Text = 0
                 Next
@@ -557,6 +558,19 @@ Public Class Form1
                     SwordButton.Visible = True
                 End If
                 HideKeysMap(0)
+                EPReward = -1
+                DPReward = -1
+                TOHReward = -1
+                PODReward = -1
+                SPReward = -1
+                SWReward = -1
+                TTReward = -1
+                IPReward = -1
+                MMReward = -1
+                TRReward = -1
+                For Each Pic in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton, TRButton}
+                    Pic.Image = Nothing
+                Next
                 EPBoss.Left = 163
                 DPBoss.Left = 163
                 HeraBoss.Left = 163
@@ -567,10 +581,6 @@ Public Class Form1
                 IPBoss.Left = 365
                 MMBoss.Left = 365
                 TRBoss.Left = 365
-                ChangeReward()
-                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
-                    Pic.Image = Nothing
-                Next
                 HCChests.Text = 8
                 AGChests.Text = 2
                 EPChests.Text = 6
@@ -602,6 +612,19 @@ Public Class Form1
                     SwordButton.Visible = True
                 End If
                 HideKeysMap(1)
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                For Each Pic in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton, TRButton}
+                    Pic.Image = My.Resources.crystal
+                Next
                 AGBorder.Visible = True
                 AGLabel.Visible = True
                 AGChests.Visible = True
@@ -617,10 +640,6 @@ Public Class Form1
                 IPBoss.Left = 317
                 MMBoss.Left = 317
                 TRBoss.Left = 317
-                ChangeReward()
-                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
-                    Pic.Image = My.Resources.crystal
-                Next
                 HCPrizes.Text = 7
                 EPPrizes.Text = 3
                 DPPrizes.Text = 3
@@ -3641,30 +3660,24 @@ Public Class Form1
             EPPrizes.Text = 3 : NumChange(EPPrizes,3,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 EPChests.Text = 5 : NumChange(EPChests,5,,1)
-                EPButton.Image = My.Resources.crystal
             Else
                 EPChests.Text = 6 : NumChange(EPChests,5,,1)
-                EPButton.Image = Nothing
             End If
             LOFF(DPLabel)
             DPKeys.Text = 0 : NumChange(DPKeys,1)
             DPPrizes.Text = 2 : NumChange(DPPrizes,2,,1)            
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 DPChests.Text = 0 : NumChange(DPChests,4)
-                DPButton.Image = My.Resources.crystal
             Else
                 DPChests.Text = 6 : NumChange(DPChests,6,,1)
-                DPButton.Image = Nothing
             End If
             LOFF(TOHLabel)
             TOHKeys.Text = 0 : NumChange(TOHKeys,1)
             TOHPrizes.Text = 2 : NumChange(TOHPrizes,2,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TOHChests.Text = 0 : NumChange(TOHChests,6)
-                TOHButton.Image = My.Resources.crystal
             Else
                 TOHChests.Text = 6 : NumChange(TOHChests,6,,1)
-                TOHButton.Image = Nothing
             End If
             LOFF(AGLabel)
             AGKeys.Text = 0 : NumChange(AGKeys,2)
@@ -3676,42 +3689,32 @@ Public Class Form1
             PODPrizes.Text = 5 : NumChange(PODPrizes,5,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 PODChests.Text = 0 : NumChange(PODChests,14)
-                PODButton.Image = My.Resources.crystal
             Else
                 PODChests.Text = 14 : NumChange(PODChests,14,,1)
-                PODButton.Image = Nothing
             End If
             LOFF(SPLabel)
             SPKeys.Text = 0  : NumChange(SPKeys,1)
             SPPrizes.Text = 6  : NumChange(SPPrizes,6,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 SPChests.Text = 0 : NumChange(SPChests,6)
-                SPButton.Image = My.Resources.crystal
             Else
                 SPChests.Text = 10 : NumChange(SPChests,10,,1)
-                SPButton.Image = Nothing
             End If
             LOFF(SWLabel)
             SWKeys.Text = 0 : NumChange(SWKeys,3)
             SWPrizes.Text = 2 : NumChange(SWPrizes,2,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 SWChests.Text = 0 : NumChange(SWChests,2)
-                SWReward = 0
-                SWButton.Image = My.Resources.crystal
             Else
                 SWChests.Text = 8 : NumChange(SWChests,8,,1)
-                SWReward = -1
-                SWButton.Image = Nothing
             End If
             LOFF(TTLabel)
             TTKeys.Text = 0 : NumChange(TTKeys,1)
             TTPrizes.Text = 4 : NumChange(TTPrizes,4,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TTChests.Text = 0 : NumChange(TTChests,8)
-                TTButton.Image = My.Resources.crystal
             Else
                 TTChests.Text = 8 : NumChange(TTChests,8,,1)
-                TTButton.Image = Nothing
             End If
             
             LOFF(IPLabel)
@@ -3719,20 +3722,16 @@ Public Class Form1
             IPPrizes.Text = 3 : NumChange(IPPrizes,3,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 IPChests.Text = 0 : NumChange(IPChests,3)
-                IPButton.Image = My.Resources.crystal
             Else
                 IPChests.Text = 8 : NumChange(IPChests,8,,1)
-                IPButton.Image = Nothing
             End If
             LOFF(MMLabel)
             MMKeys.Text = 0 : NumChange(MMKeys,3)
             MMPrizes.Text = 2 : NumChange(MMPrizes,2,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 MMChests.Text = 0 : NumChange(MMChests,8)
-                MMButton.Image = My.Resources.crystal
             Else
                 MMChests.Text = 8 : NumChange(MMChests,8,,1)
-                MMButton.Image = Nothing
             End If
             MireMedallion = 0
             MireBEQ.Image = My.Resources.whatmedallion
@@ -3741,10 +3740,8 @@ Public Class Form1
             TRPrizes.Text = 5 : NumChange(TRPrizes,5,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TRChests.Text = 0 : NumChange(TRChests,12)
-                TRButton.Image = My.Resources.crystal
             Else
                 TRChests.Text = 12 : NumChange(TRChests,12,,1)
-                TRButton.Image = Nothing
             End If
             TurtleMedallion = 0
             TurtleBEQ.Image = My.Resources.whatmedallion
@@ -3753,7 +3750,36 @@ Public Class Form1
             GTChests.Text = 27 : NumChange(GTChests,27,,1)
                 
 
-            ChangeReward()
+            If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then
+                EPReward = -1
+                DPReward = -1
+                TOHReward = -1
+                PODReward = -1
+                SPReward = -1
+                SWReward = -1
+                TTReward = -1
+                IPReward = -1
+                MMReward = -1
+                TRReward = -1
+                For Each Pic in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton, TRButton}
+                    SwitchCrystal(Pic,-1)
+                Next
+            Else
+                EPReward = 0
+                DPReward = 0
+                TOHReward = 0
+                PODReward = 0
+                SPReward = 0
+                SWReward = 0
+                TTReward = 0
+                IPReward = 0
+                MMReward = 0
+                TRReward = 0
+                For Each Pic in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton, TRButton}
+                    SwitchCrystal(Pic,0)
+                Next
+            End If
+
             For Each Label as System.Windows.Forms.Label in {EPLabel2, DPLabel2, TOHLabel2, PODLabel2, SPLabel2, SWLabel2, TTLabel2, IPLabel2, MMLabel2, TRLabel2}
                 Label.BackColor = Color.Black
             Next
@@ -3796,6 +3822,8 @@ Public Class Form1
     
     Private Sub SwitchCrystal(Pic as System.Windows.Forms.PictureBox, Reward As Integer)
         Select Case Reward
+            Case -1
+                Pic.Image = Nothing
             Case 0
                 Pic.Image = My.Resources.crystal
             Case 1
@@ -3804,8 +3832,6 @@ Public Class Form1
                 Pic.Image = My.Resources.otherpendant
             Case 3
                 Pic.Image = My.Resources.greenpendant
-            Case -1
-                Pic.Image = Nothing
         End Select
     End Sub 
 
@@ -3828,7 +3854,7 @@ Public Class Form1
                 SwitchCrystal(SPButton, SPReward)
             Case "SWButton"
                 If MouseButtons = MouseButtons.Left Then SWReward = (SWReward + 1) Mod 4 Else SWReward = -1
-                SwitchCrystal(EPButton, EPReward)
+                SwitchCrystal(SWButton, SWReward)
             Case "TTButton"
                 If MouseButtons = MouseButtons.Left Then TTReward = (TTReward + 1) Mod 4 Else TTReward = -1
                 SwitchCrystal(TTButton, TTReward)
