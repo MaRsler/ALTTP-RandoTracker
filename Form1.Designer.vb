@@ -189,6 +189,7 @@ Partial Class Form1
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MMPrizes = New System.Windows.Forms.Label()
@@ -1431,10 +1432,10 @@ Partial Class Form1
         Me.LW19.ForeColor = System.Drawing.Color.Black
         Me.LW19.Location = New System.Drawing.Point(655, 67)
         Me.LW19.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW19.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW19.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW19.MaximumSize = New System.Drawing.Size(84, 24)
+        Me.LW19.MinimumSize = New System.Drawing.Size(84, 24)
         Me.LW19.Name = "LW19"
-        Me.LW19.Size = New System.Drawing.Size(60, 24)
+        Me.LW19.Size = New System.Drawing.Size(84, 24)
         Me.LW19.TabIndex = 529
         Me.LW19.Text = "Aginah"
         Me.LW19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1625,10 +1626,10 @@ Partial Class Form1
         Me.LW9.ForeColor = System.Drawing.Color.Black
         Me.LW9.Location = New System.Drawing.Point(655, 19)
         Me.LW9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW9.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW9.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW9.MaximumSize = New System.Drawing.Size(84, 24)
+        Me.LW9.MinimumSize = New System.Drawing.Size(84, 24)
         Me.LW9.Name = "LW9"
-        Me.LW9.Size = New System.Drawing.Size(60, 24)
+        Me.LW9.Size = New System.Drawing.Size(84, 24)
         Me.LW9.TabIndex = 519
         Me.LW9.Text = "Blind (5)"
         Me.LW9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -2971,6 +2972,16 @@ Partial Class Form1
         Me.Button4.TabIndex = 591
         Me.Button4.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.Location = New System.Drawing.Point(715, 43)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(24, 24)
+        Me.Button3.TabIndex = 589
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Button2
         '
         Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
@@ -4015,6 +4026,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Button6)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TRLabel2)
@@ -4250,6 +4262,7 @@ Partial Class Form1
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button1 As Button
     Friend WithEvents GTLabel As Label

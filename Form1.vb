@@ -1,5 +1,5 @@
 Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, Maze, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -480,16 +480,11 @@ Public Class Form1
                 For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, DPMap, DPBigKey, HeraMap, HeraBigKey, PODMap, PODBigKey, SPMap, SPBigKey, SWMap, SWBigKey, TTMap, TTBigKey, IPMap, IPBigKey, MMMap, MMBigKey, TRMap, TRBigKey, GTBigKey}
                     Check.Visible = False
                 Next
-                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys}
+                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys, AGLabel, AGChests, AGPrizes, GTLabel, GTChests}
                     Label.Visible = False
                 Next
                 AGBorder.Visible = False
-                AGLabel.Visible = False
-                AGChests.Visible = False
-                AGPrizes.Visible = False
                 GTBorder.Visible = False
-                GTLabel.Visible = False
-                GTChests.Visible = False
                 
                 For Each Label as System.Windows.Forms.Label in {HCPrizes, EPPrizes, DPPrizes, TOHPrizes, PODPrizes, SPPrizes, SWPrizes, TTPrizes, IPPrizes, MMPrizes, TRPrizes}
                     Label.Visible = True
@@ -499,15 +494,11 @@ Public Class Form1
                 For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, DPMap, DPBigKey, HeraMap, HeraBigKey, PODMap, PODBigKey, SPMap, SPBigKey, SWMap, SWBigKey, TTMap, TTBigKey, IPMap, IPBigKey, MMMap, MMBigKey, TRMap, TRBigKey, GTBigKey}
                     Check.Visible = True
                 Next
-                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys}
+                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys, AGLabel, AGChests, AGPrizes, GTLabel, GTChests}
                     Label.Visible = True
                 Next
                 AGBorder.Visible = True
-                AGLabel.Visible = True
-                AGChests.Visible = True
                 GTBorder.Visible = True
-                GTLabel.Visible = True
-                GTChests.Visible = True
                 For Each Label as System.Windows.Forms.Label in {HCPrizes, EPPrizes, DPPrizes, TOHPrizes, PODPrizes, SPPrizes, SWPrizes, TTPrizes, IPPrizes, MMPrizes, TRPrizes}
                     Label.Visible = False
                 Next
@@ -517,16 +508,9 @@ Public Class Form1
     Private Sub ChangeReward()
         Dim Val as Integer = 0
         If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then Val = -1
-        EPReward = Val 
-        DPReward = Val
-        TOHReward = Val
-        PODReward = Val
-        SPReward = Val
-        SWReward = Val
-        TTReward = Val
-        IPReward = Val
-        MMReward = Val
-        TRReward = Val
+        For Each Reward as Integer in {EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward}
+            Reward = Val
+        Next
     End Sub
 
     Private Sub ComboBox1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ComboBox1.SelectedIndexChanged
@@ -549,16 +533,9 @@ Public Class Form1
                 MMBoss.Left = 317
                 TRBoss.Left = 317
                 ChangeReward()
-                EPButton.Image = My.Resources.crystal
-                DPButton.Image = My.Resources.crystal
-                TOHButton.Image = My.Resources.crystal
-                PODButton.Image = My.Resources.crystal
-                SPButton.Image = My.Resources.crystal
-                SWButton.Image = My.Resources.crystal
-                TTButton.Image = My.Resources.crystal
-                IPButton.Image = My.Resources.crystal
-                MMButton.Image = My.Resources.crystal
-                TRButton.Image = My.Resources.crystal
+                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
+                    Pic.Image = My.Resources.crystal
+                Next
                 For Each Label as System.Windows.Forms.Label in {HCChests, AGChests, EPChests, DPChests, TOHChests, PODChests, SPChests, SWChests, TTChests, IPChests, MMChests, TRChests, GTChests}
                     Label.Text = 0
                 Next
@@ -591,16 +568,9 @@ Public Class Form1
                 MMBoss.Left = 365
                 TRBoss.Left = 365
                 ChangeReward()
-                EPButton.Image = Nothing
-                DPButton.Image = Nothing
-                TOHButton.Image = Nothing
-                PODButton.Image = Nothing
-                SPButton.Image = Nothing
-                SWButton.Image = Nothing
-                TTButton.Image = Nothing
-                IPButton.Image = Nothing
-                MMButton.Image = Nothing
-                TRButton.Image = Nothing
+                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
+                    Pic.Image = Nothing
+                Next
                 HCChests.Text = 8
                 AGChests.Text = 2
                 EPChests.Text = 6
@@ -648,16 +618,9 @@ Public Class Form1
                 MMBoss.Left = 317
                 TRBoss.Left = 317
                 ChangeReward()
-                EPButton.Image = My.Resources.crystal
-                DPButton.Image = My.Resources.crystal
-                TOHButton.Image = My.Resources.crystal
-                PODButton.Image = My.Resources.crystal
-                SPButton.Image = My.Resources.crystal
-                SWButton.Image = My.Resources.crystal
-                TTButton.Image = My.Resources.crystal
-                IPButton.Image = My.Resources.crystal
-                MMButton.Image = My.Resources.crystal
-                TRButton.Image = My.Resources.crystal
+                For Each Pic as System.Windows.Forms.PictureBox in {EPButton, DPButton, TOHButton, PODButton, SPButton, SWButton, TTButton, IPButton, MMButton,TRButton}
+                    Pic.Image = My.Resources.crystal
+                Next
                 HCPrizes.Text = 7
                 EPPrizes.Text = 3
                 DPPrizes.Text = 3
@@ -1484,6 +1447,11 @@ Public Class Form1
         SwitchChestIcon(sender, e, Library)
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Maze = (Maze + 1) Mod 3
+        SwitchChestIcon(sender, e, Maze)
+    End Sub
+
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         SpecRock = (SpecRock + 1) Mod 3
         SwitchChestIcon(sender, e, SpecRock)
@@ -1600,13 +1568,13 @@ Public Class Form1
     Private Sub HCChests_MouseDown(sender As Object, e As EventArgs) Handles HCChests.MouseDown
         If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
             If MouseButtons = MouseButtons.Left Then NumChange(HCChests,8,-1,1)
-            If MouseButtons = MouseButtons.Right = True Then NumChange(HCChests,8,1,1)
+            If MouseButtons = MouseButtons.Right Then NumChange(HCChests,8,1,1)
         End If
     End Sub
 
     Private Sub HCKeys_MouseDown(sender As Object, e As EventArgs) Handles HCKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(HCKeys,1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(HCKeys,1,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(HCKeys,1,-1)
         HCCheck()
         LWCheck()
     End Sub
@@ -1616,7 +1584,7 @@ Public Class Form1
             If MouseButtons = MouseButtons.Left Then
                 NumChange(HCPrizes,6,-1,1)
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(HCPrizes,6,1,1)
                 Else
@@ -1629,7 +1597,7 @@ Public Class Form1
     Private Sub AGChests_MouseDown(sender As Object, e As MouseEventArgs) Handles AGChests.MouseDown
         If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then
             If MouseButtons = MouseButtons.Left Then NumChange(AGChests,2,-1,1)
-            If MouseButtons = MouseButtons.Right = True Then NumChange(AGChests,2,1,1)
+            If MouseButtons = MouseButtons.Right Then NumChange(AGChests,2,1,1)
         End If
     End Sub
 
@@ -1669,7 +1637,7 @@ Public Class Form1
                 NumChange(EPChests,6,-1,1)
                 If EPChests.Text = 0 Then EPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(EPChests,6,1,1)
                 EPLabel2.BackColor = Color.Black
             End If
@@ -1681,7 +1649,7 @@ Public Class Form1
                 NumChange(EPPrizes,3,-1,1)
                 If EPPrizes.Text = 0 Then EPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(EPPrizes,3,1,1)
                 EPLabel2.BackColor = Color.Black
             End If
@@ -1805,7 +1773,7 @@ Public Class Form1
                 NumChange(DPChests,6,-1,1)
                 If DPChests.Text = 0 Then DPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(DPChests,6,1,1)
                 DPLabel2.BackColor = Color.Black
             End If
@@ -1817,7 +1785,7 @@ Public Class Form1
                 NumChange(DPPrizes,3,-1,1)
                 If DPPrizes.Text = 0 Then DPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(DPPrizes,2,1,1)
                 Else
@@ -1830,7 +1798,7 @@ Public Class Form1
 
     Private Sub DPKeys_MouseDown(sender As Object, e As EventArgs) Handles DPKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(DPKeys,1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(DPKeys,1,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(DPKeys,1,-1)
         DPCheck()
     End Sub
 
@@ -1952,7 +1920,7 @@ Public Class Form1
                 NumChange(TOHChests,6,-1,1)
                 If TOHChests.Text = 0 Then TOHLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(TOHChests,6,1,1)
 				TOHLabel2.BackColor = Color.Black
             End If
@@ -1964,7 +1932,7 @@ Public Class Form1
                 NumChange(TOHPrizes,3,-1,1)
                 If TOHPrizes.Text = 0 Then TOHLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(TOHPrizes,2,1,1)
                 Else
@@ -1976,7 +1944,7 @@ Public Class Form1
     End Sub
     Private Sub HeraKeys_MouseDown(sender As Object, e As EventArgs) Handles TOHKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(TOHKeys,1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(TOHKeys,1,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(TOHKeys,1,-1)
 		TOHCheck()
     End Sub
     Public Sub TOHCheck()
@@ -2094,13 +2062,13 @@ Public Class Form1
     Private Sub AGPrizes_MouseDown(sender As Object, e As EventArgs) Handles AGPrizes.MouseDown
         If ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 11 Then
             If MouseButtons = MouseButtons.Left Then NumChange(AGPrizes,2,-1,1)
-            If MouseButtons = MouseButtons.Right = True Then NumChange(AGPrizes,2,1,1)
+            If MouseButtons = MouseButtons.Right Then NumChange(AGPrizes,2,1,1)
         End If
     End Sub
 
     Private Sub AGKeys_MouseDown(sender As Object, e As EventArgs) Handles AGKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(AGKeys,2,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(AGKeys,2,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(AGKeys,2,-1)
         AgaCheck()
     End Sub
 
@@ -2219,7 +2187,7 @@ Public Class Form1
                 NumChange(PODChests,6,-1,1)
                 If PODChests.Text = 0 Then PODLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(PODChests,14,1,1)
                 PODLabel2.BackColor = Color.Black
             End If
@@ -2231,7 +2199,7 @@ Public Class Form1
                 NumChange(PODPrizes,6,-1,1)
                 If PODPrizes.Text = 0 Then PODLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(PODPrizes,6,1,1)
                 Else
@@ -2243,7 +2211,7 @@ Public Class Form1
     End Sub
     Private Sub PODKeys_MouseDown(sender As Object, e As EventArgs) Handles PODKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(PODKeys,6,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(PODKeys,6,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(PODKeys,6,-1)
         PODCheck()
     End Sub
     Public Sub PODCheck()
@@ -2384,7 +2352,7 @@ Public Class Form1
                 NumChange(SPChests,10,-1,1)
                 If SPChests.Text = 0 Then SPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(SPChests,10,1,1)
 				SPLabel2.BackColor = Color.Black
             End If
@@ -2396,7 +2364,7 @@ Public Class Form1
                 NumChange(SPPrizes,10,-1,1)
                 If SPPrizes.Text = 0 Then SPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(SPPrizes,6,1,1)
                 Else
@@ -2408,7 +2376,7 @@ Public Class Form1
     End Sub
     Private Sub SPKeys_MouseDown(sender As Object, e As EventArgs) Handles SPKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(SPKeys,1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(SPKeys,1,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(SPKeys,1,-1)
 		SPCheck()
     End Sub
     Public Sub SPCheck()
@@ -2517,7 +2485,7 @@ Public Class Form1
                 NumChange(SWChests,8,-1,1)
                 If SWChests.Text = 0 Then SWLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(SWChests,8,1,1)
                 SWLabel2.BackColor = Color.Black
             End If
@@ -2529,7 +2497,7 @@ Public Class Form1
                 NumChange(SWPrizes,2,-1,1)
                 If SWPrizes.Text = 0 Then SWLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(SWPrizes,2,1,1)
                 Else
@@ -2542,7 +2510,7 @@ Public Class Form1
 
     Private Sub SWKeys_MouseDown(sender As Object, e As EventArgs) Handles SWKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(SWKeys,3,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(SWKeys,3,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(SWKeys,3,-1)
 		SWCheck()
     End Sub
 
@@ -2651,7 +2619,7 @@ Public Class Form1
                 NumChange(TTPrizes,4,-1,1)
                 If TTPrizes.Text = 0 Then TTLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(TTPrizes,4,1,1)
                 Else
@@ -2667,7 +2635,7 @@ Public Class Form1
                 NumChange(TTChests,8,-1,1)
                 If TTChests.Text = 0 Then TTLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(TTChests,8,1,1)
                 TTLabel2.BackColor = Color.Black
             End If
@@ -2676,7 +2644,7 @@ Public Class Form1
 
     Private Sub TTKeys_MouseDown(sender As Object, e As EventArgs) Handles TTKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(TTKeys,1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(TTKeys,1,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(TTKeys,1,-1)
 		TTCheck()
     End Sub
 
@@ -2769,7 +2737,7 @@ Public Class Form1
                 NumChange(IPPrizes,3,-1,1)
                 If IPPrizes.Text = 0 Then IPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(IPPrizes,3,1,1)
                 Else
@@ -2786,7 +2754,7 @@ Public Class Form1
                 NumChange(IPChests,8,-1,1)
                 If IPChests.Text = 0 Then IPLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(IPChests,8,1,1)
                 IPLabel2.BackColor = Color.Black
             End If
@@ -2795,7 +2763,7 @@ Public Class Form1
 
     Private Sub IPKeys_MouseDown(sender As Object, e As EventArgs) Handles IPKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(IPKeys,2,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(IPKeys,2,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(IPKeys,2,-1)
         IPCheck()
     End Sub
 
@@ -2923,7 +2891,7 @@ Public Class Form1
                 NumChange(MMPrizes,2,-1,1)
                 If MMPrizes.Text = 0 Then MMLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(MMPrizes,2,1,1)
                 Else
@@ -2939,7 +2907,7 @@ Public Class Form1
                 NumChange(MMChests,8,-1,1)
                 If MMChests.Text = 0 Then MMLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(MMChests,8,1,1)
                 MMLabel2.BackColor = Color.Black
             End If
@@ -2947,7 +2915,7 @@ Public Class Form1
     End Sub
     Private Sub MMKeys_MouseDown(sender As Object, e As EventArgs) Handles MMKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(MMKeys,3,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(MMKeys,3,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(MMKeys,3,-1)
         MMCheck()
     End Sub
     Public Sub MMCheck()
@@ -3106,7 +3074,7 @@ Public Class Form1
                 NumChange(TRPrizes,5,-1,1)
                 If TRPrizes.Text = 0 Then TRLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 If ComboBox1.SelectedIndex = 0 Then
                     NumChange(TRPrizes,5,1,1)
                 Else
@@ -3122,7 +3090,7 @@ Public Class Form1
                 NumChange(TRChests,12,-1,1)
                 If TRChests.Text = 0 Then TRLabel2.BackColor = Color.Green
             End If
-            If MouseButtons = MouseButtons.Right = True Then
+            If MouseButtons = MouseButtons.Right Then
                 NumChange(TRChests,12,1,1)
                 TRLabel2.BackColor = Color.Black
             End If
@@ -3130,7 +3098,7 @@ Public Class Form1
     End Sub
     Private Sub TRKeys_MouseDown(sender As Object, e As EventArgs) Handles TRKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(TRKeys,4,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(TRKeys,4,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(TRKeys,4,-1)
         TRCheck()
     End Sub
 
@@ -3356,12 +3324,12 @@ Public Class Form1
 
     Private Sub GTChests_MouseDown(sender As Object, e As EventArgs) Handles GTChests.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(GTChests,27,-1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(GTChests,27,1,1)
+        If MouseButtons = MouseButtons.Right Then NumChange(GTChests,27,1,1)
     End Sub
 
     Private Sub GTKeys_MouseDown(sender As Object, e As EventArgs) Handles GTKeys.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(GTKeys,4,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(GTKeys,4,-1)
+        If MouseButtons = MouseButtons.Right Then NumChange(GTKeys,4,-1)
     End Sub
 
     Public Sub GTCheck()
@@ -3661,7 +3629,6 @@ Public Class Form1
             MedallionCount = 0
             ' Resetting all dungeons
             LOFF(HCLabel)
-            HCBorder.BackColor = Color.Black
             HCKeys.Text = 0 : NumChange(HCKeys,1)
             HCPrizes.Text = 6 : NumChange(HCPrizes,6,,1)
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
@@ -3670,11 +3637,8 @@ Public Class Form1
                 HCChests.Text = 8 : NumChange(HCChests,8,,1)
             End If
             LOFF(EPLabel)
-            EPBorder.BackColor = Color.Black
             EPKeys.Text = "-"
             EPPrizes.Text = 3 : NumChange(EPPrizes,3,,1)
-            EPLabel2.BackColor = Color.Black
-            EPButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 EPChests.Text = 5 : NumChange(EPChests,5,,1)
                 EPButton.Image = My.Resources.crystal
@@ -3683,11 +3647,8 @@ Public Class Form1
                 EPButton.Image = Nothing
             End If
             LOFF(DPLabel)
-            DPBorder.BackColor = Color.Black
             DPKeys.Text = 0 : NumChange(DPKeys,1)
-            DPPrizes.Text = 2 : NumChange(DPPrizes,2,,1)
-            DPLabel2.BackColor = Color.Black
-            DPButton.BackColor = Color.Black
+            DPPrizes.Text = 2 : NumChange(DPPrizes,2,,1)            
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 DPChests.Text = 0 : NumChange(DPChests,4)
                 DPButton.Image = My.Resources.crystal
@@ -3696,11 +3657,8 @@ Public Class Form1
                 DPButton.Image = Nothing
             End If
             LOFF(TOHLabel)
-            TOHBorder.BackColor = Color.Black
             TOHKeys.Text = 0 : NumChange(TOHKeys,1)
             TOHPrizes.Text = 2 : NumChange(TOHPrizes,2,,1)
-            TOHLabel2.BackColor = Color.Black
-            TOHButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TOHChests.Text = 0 : NumChange(TOHChests,6)
                 TOHButton.Image = My.Resources.crystal
@@ -3709,17 +3667,13 @@ Public Class Form1
                 TOHButton.Image = Nothing
             End If
             LOFF(AGLabel)
-            AGBorder.BackColor = Color.Black
             AGKeys.Text = 0 : NumChange(AGKeys,2)
             AGChests.Text = 2 : NumChange(AGChests,2,,1)
             AgaButton.Visible = False
             Aganhim = False
             LOFF(PODLabel)
-            PODBorder.BackColor = Color.Black
             PODKeys.Text = 0 : NumChange(PODKeys,6)
             PODPrizes.Text = 5 : NumChange(PODPrizes,5,,1)
-            PODLabel2.BackColor = Color.Black
-            PODButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 PODChests.Text = 0 : NumChange(PODChests,14)
                 PODButton.Image = My.Resources.crystal
@@ -3727,14 +3681,9 @@ Public Class Form1
                 PODChests.Text = 14 : NumChange(PODChests,14,,1)
                 PODButton.Image = Nothing
             End If
-            PODLabel2.BackColor = Color.Black
-            PODButton.BackColor = Color.Black
             LOFF(SPLabel)
-            SPBorder.BackColor = Color.Black
             SPKeys.Text = 0  : NumChange(SPKeys,1)
             SPPrizes.Text = 6  : NumChange(SPPrizes,6,,1)
-            SPLabel2.BackColor = Color.Black
-            SPButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 SPChests.Text = 0 : NumChange(SPChests,6)
                 SPButton.Image = My.Resources.crystal
@@ -3742,14 +3691,9 @@ Public Class Form1
                 SPChests.Text = 10 : NumChange(SPChests,10,,1)
                 SPButton.Image = Nothing
             End If
-            SPLabel2.BackColor = Color.Black
-            SPButton.BackColor = Color.Black
             LOFF(SWLabel)
-            SWBorder.BackColor = Color.Black
             SWKeys.Text = 0 : NumChange(SWKeys,3)
             SWPrizes.Text = 2 : NumChange(SWPrizes,2,,1)
-            SWLabel2.BackColor = Color.Black
-            SWButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 SWChests.Text = 0 : NumChange(SWChests,2)
                 SWReward = 0
@@ -3759,14 +3703,9 @@ Public Class Form1
                 SWReward = -1
                 SWButton.Image = Nothing
             End If
-            SWLabel2.BackColor = Color.Black
-            SWButton.BackColor = Color.Black
             LOFF(TTLabel)
-            TTBorder.BackColor = Color.Black
             TTKeys.Text = 0 : NumChange(TTKeys,1)
             TTPrizes.Text = 4 : NumChange(TTPrizes,4,,1)
-            TTLabel2.BackColor = Color.Black
-            TTButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TTChests.Text = 0 : NumChange(TTChests,8)
                 TTButton.Image = My.Resources.crystal
@@ -3774,14 +3713,10 @@ Public Class Form1
                 TTChests.Text = 8 : NumChange(TTChests,8,,1)
                 TTButton.Image = Nothing
             End If
-            TTLabel2.BackColor = Color.Black
-            TTButton.BackColor = Color.Black
+            
             LOFF(IPLabel)
-            IPBorder.BackColor = Color.Black
             IPKeys.Text = 0 : NumChange(IPKeys,3)
             IPPrizes.Text = 3 : NumChange(IPPrizes,3,,1)
-            IPLabel2.BackColor = Color.Black
-            IPButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 IPChests.Text = 0 : NumChange(IPChests,3)
                 IPButton.Image = My.Resources.crystal
@@ -3789,14 +3724,9 @@ Public Class Form1
                 IPChests.Text = 8 : NumChange(IPChests,8,,1)
                 IPButton.Image = Nothing
             End If
-            IPLabel2.BackColor = Color.Black
-            IPButton.BackColor = Color.Black
             LOFF(MMLabel)
-            MMBorder.BackColor = Color.Black
             MMKeys.Text = 0 : NumChange(MMKeys,3)
             MMPrizes.Text = 2 : NumChange(MMPrizes,2,,1)
-            MMLabel2.BackColor = Color.Black
-            MMButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 MMChests.Text = 0 : NumChange(MMChests,8)
                 MMButton.Image = My.Resources.crystal
@@ -3804,16 +3734,11 @@ Public Class Form1
                 MMChests.Text = 8 : NumChange(MMChests,8,,1)
                 MMButton.Image = Nothing
             End If
-            MMLabel2.BackColor = Color.Black
-            MMButton.BackColor = Color.Black
             MireMedallion = 0
             MireBEQ.Image = My.Resources.whatmedallion
             LOFF(TRLabel)
-            TRBorder.BackColor = Color.Black
             TRKeys.Text = 0 : NumChange(TRKeys,4)
             TRPrizes.Text = 5 : NumChange(TRPrizes,5,,1)
-            TRLabel2.BackColor = Color.Black
-            TRButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TRChests.Text = 0 : NumChange(TRChests,12)
                 TRButton.Image = My.Resources.crystal
@@ -3821,46 +3746,31 @@ Public Class Form1
                 TRChests.Text = 12 : NumChange(TRChests,12,,1)
                 TRButton.Image = Nothing
             End If
-            TRLabel2.BackColor = Color.Black
-            TRButton.BackColor = Color.Black
             TurtleMedallion = 0
             TurtleBEQ.Image = My.Resources.whatmedallion
             LOFF(GTLabel)
-            GTBorder.BackColor = Color.Black
             GTKeys.Text = 0 : NumChange(GTKeys,4)
             GTChests.Text = 27 : NumChange(GTChests,27,,1)
+                
 
             ChangeReward()
+            For Each Label as System.Windows.Forms.Label in {EPLabel2, DPLabel2, TOHLabel2, PODLabel2, SPLabel2, SWLabel2, TTLabel2, IPLabel2, MMLabel2, TRLabel2}
+                Label.BackColor = Color.Black
+            Next
             For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, EPBoss, DPMap, DPBigKey, DPBoss, HeraMap, HeraBigKey, HeraBoss, PODMap, PODBigKey, PODBoss, SPMap, SPBigKey, SPBoss, SWMap, SWBigKey, SWBoss, TTMap, TTBigKey, TTBoss, IPMap, IPBigKey, IPBoss, MMMap, MMBigKey, MMBoss, TRMap, TRBigKey, TRBoss, GTBigKey}
                     Check.Checked = False
             Next
             ' Resetting all Sphere 1 locations
             For Each Check as System.Windows.Forms.CheckBox in {LW1, LW2, LW7, LW8, LW9, LW10, LW11, LW13, LW17, LW32, LW36, DW2, DW3, DW4, DW5, DW10}
-                    Check.Checked = False
+                Check.Checked = False
             Next
             ' Resetting all scoutable items
-            AgaTree = 0
-            Button1.Image = My.Resources.chestmaybesmall
-            Library = 0
-            Button2.Image = My.Resources.chestmaybesmall
-            SpecRock = 0
-            Button4.Image = My.Resources.chestmaybesmall
-            EtherTab = 0
-            Button5.Image = My.Resources.chestmaybesmall
-            Floating = 0
-            Button6.Image = My.Resources.chestmaybesmall
-            DPLedge = 0
-            Button7.Image = My.Resources.chestmaybesmall
-            BombosTab = 0
-            Button8.Image = My.Resources.chestmaybesmall
-            ZoraLedge = 0
-            Button9.Image = My.Resources.chestmaybesmall
-            LakeIsle = 0
-            Button10.Image = My.Resources.chestmaybesmall
-            Pedestal = 0
-            Button11.Image = My.Resources.chestmaybesmall
-            Bumper = 0
-            Button12.Image = My.Resources.chestmaybesmall
+            For Each But as System.Windows.Forms.Button in {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12}
+                But.Image = My.Resources.chestmaybesmall
+            Next
+            For Each Scout as Integer in {AgaTree, Library, Maze, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper}
+                Scout = 0
+            Next
             ' Resetting all dungeons and overworld locations
             AllCheck()
         End If
@@ -3884,106 +3794,53 @@ Public Class Form1
         DWCheck()
     End Sub
     
- 
-    Private Sub SwitchCrystal(sender As Object, e As EventArgs, Reward As Integer)
+    Private Sub SwitchCrystal(Pic as System.Windows.Forms.PictureBox, Reward As Integer)
         Select Case Reward
             Case 0
-                DirectCast(sender, PictureBox).Image = My.Resources.crystal
+                Pic.Image = My.Resources.crystal
             Case 1
-                DirectCast(sender, PictureBox).Image = My.Resources.fairycrystal
+                Pic.Image = My.Resources.fairycrystal
             Case 2
-                DirectCast(sender, PictureBox).Image = My.Resources.otherpendant
+                Pic.Image = My.Resources.otherpendant
             Case 3
-                DirectCast(sender, PictureBox).Image = My.Resources.greenpendant
+                Pic.Image = My.Resources.greenpendant
+            Case -1
+                Pic.Image = Nothing
         End Select
-    End Sub
+    End Sub 
 
     Private Sub CrystalClick(sender As Object, e As EventArgs) Handles EPButton.MouseDown, DPButton.MouseDown, TOHButton.MouseDown, PODButton.MouseDown, SPButton.MouseDown, SWButton.MouseDown, TTButton.MouseDown, IPButton.MouseDown, MMButton.MouseDown, TRButton.MouseDown
         Select Case DirectCast(sender, PictureBox).Name
             Case "EPButton"
-                If MouseButtons = MouseButtons.Left Then
-                    EPReward = (EPReward + 1) Mod 4
-                    SwitchCrystal(sender, e, EPReward)
-                Else
-                    EPReward = -1
-                    EPButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then EPReward = (EPReward + 1) Mod 4 Else EPReward = -1
+                SwitchCrystal(EPButton, EPReward)
             Case "DPButton"
-                If MouseButtons = MouseButtons.Left Then
-                    DPReward = (DPReward + 1) Mod 4
-                    SwitchCrystal(sender, e, DPReward)
-                Else
-                    DPReward = -1
-                    DPButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then DPReward = (DPReward + 1) Mod 4 Else DPReward = -1
+                SwitchCrystal(DPButton, DPReward)
             Case "TOHButton"
-                If MouseButtons = MouseButtons.Left Then
-                    TOHReward = (TOHReward + 1) Mod 4
-                    SwitchCrystal(sender, e, TOHReward)
-                Else
-                    TOHReward = -1
-                    TOHButton.Image = Nothing
-                End If
-
+                If MouseButtons = MouseButtons.Left Then TOHReward = (TOHReward + 1) Mod 4 Else TOHReward = -1
+                SwitchCrystal(TOHButton, TOHReward)
             Case "PODButton"
-                If MouseButtons = MouseButtons.Left Then
-                    PODReward = (PODReward + 1) Mod 4
-                    SwitchCrystal(sender, e, PODReward)
-                Else
-                    PODReward = -1
-                    PODButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then PODReward = (PODReward + 1) Mod 4 Else PODReward = -1
+                SwitchCrystal(PODButton, PODReward)
             Case "SPButton"
-                If MouseButtons = MouseButtons.Left Then
-                    SPReward = (SPReward + 1) Mod 4
-                    SwitchCrystal(sender, e, SPReward)
-                Else
-                    SPReward = -1
-                    SPButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then SPReward = (SPReward + 1) Mod 4 Else SPReward = -1
+                SwitchCrystal(SPButton, SPReward)
             Case "SWButton"
-                If MouseButtons = MouseButtons.Left Then
-                    SWReward = (SWReward + 1) Mod 4
-                    SwitchCrystal(sender, e, SWReward)
-                Else
-                    SWReward = -1
-                    SWButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then SWReward = (SWReward + 1) Mod 4 Else SWReward = -1
+                SwitchCrystal(EPButton, EPReward)
             Case "TTButton"
-                If MouseButtons = MouseButtons.Left Then
-                    TTReward = (TTReward + 1) Mod 4
-                    SwitchCrystal(sender, e, TTReward)
-
-                Else
-                    TTReward = -1
-                    TTButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then TTReward = (TTReward + 1) Mod 4 Else TTReward = -1
+                SwitchCrystal(TTButton, TTReward)
             Case "IPButton"
-                If MouseButtons = MouseButtons.Left Then
-                    IPReward = (IPReward + 1) Mod 4
-                    SwitchCrystal(sender, e, IPReward)
-
-                Else
-                    IPReward = -1
-                    IPButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then IPReward = (IPReward + 1) Mod 4 Else IPReward = -1
+                SwitchCrystal(IPButton, IPReward)
             Case "MMButton"
-                If MouseButtons = MouseButtons.Left Then
-                    MMReward = (MMReward + 1) Mod 4
-                    SwitchCrystal(sender, e, MMReward)
-
-                Else
-                    MMReward = -1
-                    MMButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then MMReward = (MMReward + 1) Mod 4 Else MMReward = -1
+                SwitchCrystal(MMButton, MMReward)
             Case "TRButton"
-                If MouseButtons = MouseButtons.Left Then
-                    TRReward = (TRReward + 1) Mod 4
-                    SwitchCrystal(sender, e, TRReward)
-                Else
-                    TRReward = -1
-                    TRButton.Image = Nothing
-                End If
+                If MouseButtons = MouseButtons.Left Then TRReward = (TRReward + 1) Mod 4 Else TRReward = -1
+                SwitchCrystal(TRButton, TRReward)
         End Select
         LWCheck()
         DWCheck()
