@@ -477,117 +477,47 @@ Public Class Form1
 
     Private Sub HideKeysMap(i as Integer)
         If i = 1 Then
-                HCKeys.Visible = False
-                EPKeys.Visible = False
-                EPMap.Visible = False
-                EPBigKey.Visible = False
-                DPKeys.Visible = False
-                DPMap.Visible = False
-                DPBigKey.Visible = False
-                TOHKeys.Visible = False
-                HeraMap.Visible = False
-                HeraBigKey.Visible = False
-                PODKeys.Visible = False
-                PODMap.Visible = False
-                PODBigKey.Visible = False
-                SPKeys.Visible = False
-                SPMap.Visible = False
-                SPBigKey.Visible = False
-                SWKeys.Visible = False
-                SWMap.Visible = False
-                SWBigKey.Visible = False
-                TTKeys.Visible = False
-                TTMap.Visible = False
-                TTBigKey.Visible = False
-                IPKeys.Visible = False
-                IPMap.Visible = False
-                IPBigKey.Visible = False
-                MMKeys.Visible = False
-                MMMap.Visible = False
-                MMBigKey.Visible = False
-                TRKeys.Visible = False
-                TRMap.Visible = False
-                TRBigKey.Visible = False
+                For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, DPMap, DPBigKey, HeraMap, HeraBigKey, PODMap, PODBigKey, SPMap, SPBigKey, SWMap, SWBigKey, TTMap, TTBigKey, IPMap, IPBigKey, MMMap, MMBigKey, TRMap, TRBigKey, GTBigKey}
+                    Check.Visible = False
+                Next
+                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys}
+                    Label.Visible = False
+                Next
                 AGBorder.Visible = False
                 AGLabel.Visible = False
                 AGChests.Visible = False
-                AGKeys.Visible = False
                 AGPrizes.Visible = False
                 GTBorder.Visible = False
                 GTLabel.Visible = False
                 GTChests.Visible = False
-                GTKeys.Visible = False
-                GTBigKey.Visible = False
-                HCPrizes.Visible = True
-                EPPrizes.Visible = True
-                DPPrizes.Visible = True
-                TOHPrizes.Visible = True
-                PODPrizes.Visible = True
-                SPPrizes.Visible = True
-                SWPrizes.Visible = True
-                TTPrizes.Visible = True
-                IPPrizes.Visible = True
-                MMPrizes.Visible = True
-                TRPrizes.Visible = True
+                
+                For Each Label as System.Windows.Forms.Label in {HCPrizes, EPPrizes, DPPrizes, TOHPrizes, PODPrizes, SPPrizes, SWPrizes, TTPrizes, IPPrizes, MMPrizes, TRPrizes}
+                    Label.Visible = True
+                Next
+                
         Else
-                HCKeys.Visible = True
-                HCChests.ForeColor = Color.White
-                EPKeys.Visible = True
-                EPMap.Visible = True
-                EPBigKey.Visible = True
-                EPChests.ForeColor = Color.White
-                DPKeys.Visible = True
-                DPMap.Visible = True
-                DPBigKey.Visible = True
-                TOHKeys.Visible = True
-                HeraMap.Visible = True
-                HeraBigKey.Visible = True
-                PODKeys.Visible = True
-                PODMap.Visible = True
-                PODBigKey.Visible = True
-                SPKeys.Visible = True
-                SPMap.Visible = True
-                SPBigKey.Visible = True
-                SWKeys.Visible = True
-                SWMap.Visible = True
-                SWBigKey.Visible = True
-                TTKeys.Visible = True
-                TTMap.Visible = True
-                TTBigKey.Visible = True
-                IPKeys.Visible = True
-                IPMap.Visible = True
-                IPBigKey.Visible = True
-                MMKeys.Visible = True
-                MMMap.Visible = True
-                MMBigKey.Visible = True
-                TRKeys.Visible = True
-                TRMap.Visible = True
-                TRBigKey.Visible = True
+                For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, DPMap, DPBigKey, HeraMap, HeraBigKey, PODMap, PODBigKey, SPMap, SPBigKey, SWMap, SWBigKey, TTMap, TTBigKey, IPMap, IPBigKey, MMMap, MMBigKey, TRMap, TRBigKey, GTBigKey}
+                    Check.Visible = True
+                Next
+                For Each Label as System.Windows.Forms.Label in {HCKeys, EPKeys, DPKeys, TOHKeys, PODKeys, SPKeys, SWKeys, TTKeys, IPKeys, MMKeys, TRKeys, AGKeys, GTKeys}
+                    Label.Visible = True
+                Next
                 AGBorder.Visible = True
                 AGLabel.Visible = True
                 AGChests.Visible = True
-                AGKeys.Visible = True
                 GTBorder.Visible = True
                 GTLabel.Visible = True
                 GTChests.Visible = True
-                GTKeys.Visible = True
-                GTBigKey.Visible = True
-                HCPrizes.Visible = False
-                EPPrizes.Visible = False
-                DPPrizes.Visible = False
-                TOHPrizes.Visible = False
-                PODPrizes.Visible = False
-                SPPrizes.Visible = False
-                SWPrizes.Visible = False
-                TTPrizes.Visible = False
-                IPPrizes.Visible = False
-                MMPrizes.Visible = False
-                TRPrizes.Visible = False
+                For Each Label as System.Windows.Forms.Label in {HCPrizes, EPPrizes, DPPrizes, TOHPrizes, PODPrizes, SPPrizes, SWPrizes, TTPrizes, IPPrizes, MMPrizes, TRPrizes}
+                    Label.Visible = False
+                Next
         End If
     End Sub
 
-    Private Sub ChangeReward(Val as Integer)
-        EPReward = Val
+    Private Sub ChangeReward()
+        Dim Val as Integer = 0
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then Val = -1
+        EPReward = Val 
         DPReward = Val
         TOHReward = Val
         PODReward = Val
@@ -618,7 +548,7 @@ Public Class Form1
                 IPBoss.Left = 317
                 MMBoss.Left = 317
                 TRBoss.Left = 317
-                ChangeReward(0)
+                ChangeReward()
                 EPButton.Image = My.Resources.crystal
                 DPButton.Image = My.Resources.crystal
                 TOHButton.Image = My.Resources.crystal
@@ -629,19 +559,9 @@ Public Class Form1
                 IPButton.Image = My.Resources.crystal
                 MMButton.Image = My.Resources.crystal
                 TRButton.Image = My.Resources.crystal
-                HCChests.Text = 0
-                AGChests.Text = 0
-                EPChests.Text = 0
-                DPChests.Text = 0
-                TOHChests.Text = 0
-                PODChests.Text = 0
-                SPChests.Text = 0
-                SWChests.Text = 0
-                TTChests.Text = 0
-                IPChests.Text = 0
-                MMChests.Text = 0
-                TRChests.Text = 0
-                GTChests.Text = 0
+                For Each Label as System.Windows.Forms.Label in {HCChests, AGChests, EPChests, DPChests, TOHChests, PODChests, SPChests, SWChests, TTChests, IPChests, MMChests, TRChests, GTChests}
+                    Label.Text = 0
+                Next
                 HCPrizes.Text = 6
                 EPPrizes.Text = 3
                 DPPrizes.Text = 2
@@ -670,7 +590,7 @@ Public Class Form1
                 IPBoss.Left = 365
                 MMBoss.Left = 365
                 TRBoss.Left = 365
-                ChangeReward(-1)
+                ChangeReward()
                 EPButton.Image = Nothing
                 DPButton.Image = Nothing
                 TOHButton.Image = Nothing
@@ -727,7 +647,7 @@ Public Class Form1
                 IPBoss.Left = 317
                 MMBoss.Left = 317
                 TRBoss.Left = 317
-                ChangeReward(0)
+                ChangeReward()
                 EPButton.Image = My.Resources.crystal
                 DPButton.Image = My.Resources.crystal
                 TOHButton.Image = My.Resources.crystal
@@ -998,50 +918,9 @@ Public Class Form1
         '' Pedestal
         If PendantCount = 3 Then CCLR(LW47) Else COFF(LW47)
 
-        If LW1.Checked = True Then LW1.BackColor = Color.FromArgb(64, 64, 64)
-        If LW2.Checked = True Then LW2.BackColor = Color.FromArgb(64, 64, 64)
-        If LW6.Checked = True Then LW6.BackColor = Color.FromArgb(64, 64, 64)
-        If LW7.Checked = True Then LW7.BackColor = Color.FromArgb(64, 64, 64)
-        If LW8.Checked = True Then LW8.BackColor = Color.FromArgb(64, 64, 64)
-        If LW9.Checked = True Then LW9.BackColor = Color.FromArgb(64, 64, 64)
-        If LW10.Checked = True Then LW10.BackColor = Color.FromArgb(64, 64, 64)
-        If LW11.Checked = True Then LW11.BackColor = Color.FromArgb(64, 64, 64)
-        If LW12.Checked = True Then LW12.BackColor = Color.FromArgb(64, 64, 64)
-        If LW13.Checked = True Then LW13.BackColor = Color.FromArgb(64, 64, 64)
-        If LW14.Checked = True Then LW14.BackColor = Color.FromArgb(64, 64, 64)
-        If LW15.Checked = True Then LW15.BackColor = Color.FromArgb(64, 64, 64)
-        If LW16.Checked = True Then LW16.BackColor = Color.FromArgb(64, 64, 64)
-        If LW17.Checked = True Then LW17.BackColor = Color.FromArgb(64, 64, 64)
-        If LW18.Checked = True Then LW18.BackColor = Color.FromArgb(64, 64, 64)
-        If LW19.Checked = True Then LW19.BackColor = Color.FromArgb(64, 64, 64)
-        If LW20.Checked = True Then LW20.BackColor = Color.FromArgb(64, 64, 64)
-        If LW21.Checked = True Then LW21.BackColor = Color.FromArgb(64, 64, 64)
-        If LW22.Checked = True Then LW22.BackColor = Color.FromArgb(64, 64, 64)
-        If LW23.Checked = True Then LW23.BackColor = Color.FromArgb(64, 64, 64)
-        If LW24.Checked = True Then LW24.BackColor = Color.FromArgb(64, 64, 64)
-        If LW25.Checked = True Then LW25.BackColor = Color.FromArgb(64, 64, 64)
-        If LW26.Checked = True Then LW26.BackColor = Color.FromArgb(64, 64, 64)
-        If LW27.Checked = True Then LW27.BackColor = Color.FromArgb(64, 64, 64)
-        If LW28.Checked = True Then LW28.BackColor = Color.FromArgb(64, 64, 64)
-        If LW29.Checked = True Then LW29.BackColor = Color.FromArgb(64, 64, 64)
-        If LW30.Checked = True Then LW30.BackColor = Color.FromArgb(64, 64, 64)
-        If LW31.Checked = True Then LW31.BackColor = Color.FromArgb(64, 64, 64)
-        If LW32.Checked = True Then LW32.BackColor = Color.FromArgb(64, 64, 64)
-        If LW33.Checked = True Then LW33.BackColor = Color.FromArgb(64, 64, 64)
-        If LW34.Checked = True Then LW34.BackColor = Color.FromArgb(64, 64, 64)
-        If LW35.Checked = True Then LW35.BackColor = Color.FromArgb(64, 64, 64)
-        If LW36.Checked = True Then LW36.BackColor = Color.FromArgb(64, 64, 64)
-        If LW37.Checked = True Then LW37.BackColor = Color.FromArgb(64, 64, 64)
-        If LW38.Checked = True Then LW38.BackColor = Color.FromArgb(64, 64, 64)
-        If LW39.Checked = True Then LW39.BackColor = Color.FromArgb(64, 64, 64)
-        If LW40.Checked = True Then LW40.BackColor = Color.FromArgb(64, 64, 64)
-        If LW41.Checked = True Then LW41.BackColor = Color.FromArgb(64, 64, 64)
-        If LW42.Checked = True Then LW42.BackColor = Color.FromArgb(64, 64, 64)
-        If LW43.Checked = True Then LW43.BackColor = Color.FromArgb(64, 64, 64)
-        If LW44.Checked = True Then LW44.BackColor = Color.FromArgb(64, 64, 64)
-        If LW45.Checked = True Then LW45.BackColor = Color.FromArgb(64, 64, 64)
-        If LW46.Checked = True Then LW46.BackColor = Color.FromArgb(64, 64, 64)
-        If LW47.Checked = True Then LW47.BackColor = Color.FromArgb(64, 64, 64)
+        For Each Check as System.Windows.Forms.CheckBox in {LW1, LW2, LW6, LW7, LW8, LW9, LW10, LW11, LW12, LW13, LW14, LW15, LW16, LW17, LW18, LW19, LW20, LW21, LW22, LW23, LW24, LW25, LW26, LW27, LW28, LW29, LW30, LW31, LW32, LW33, LW34, LW35, LW36, LW37, LW38, LW39, LW40, LW41, LW42, LW43, LW44, LW45, LW46, LW47}
+            If Check.Checked Then Check.BackColor = Color.FromArgb(64, 64, 64)
+        Next
 
     End Sub
     Public Sub DWCheckNormal()
@@ -1162,22 +1041,10 @@ Public Class Form1
             COFF(DW16)
         End If
 
-        If DW1.Checked = True Then DW1.BackColor = Color.FromArgb(64, 64, 64)
-        If DW2.Checked = True Then DW2.BackColor = Color.FromArgb(64, 64, 64)
-        If DW3.Checked = True Then DW3.BackColor = Color.FromArgb(64, 64, 64)
-        If DW4.Checked = True Then DW4.BackColor = Color.FromArgb(64, 64, 64)
-        If DW5.Checked = True Then DW5.BackColor = Color.FromArgb(64, 64, 64)
-        If DW6.Checked = True Then DW6.BackColor = Color.FromArgb(64, 64, 64)
-        If DW7.Checked = True Then DW7.BackColor = Color.FromArgb(64, 64, 64)
-        If DW8.Checked = True Then DW8.BackColor = Color.FromArgb(64, 64, 64)
-        If DW9.Checked = True Then DW9.BackColor = Color.FromArgb(64, 64, 64)
-        If DW10.Checked = True Then DW10.BackColor = Color.FromArgb(64, 64, 64)
-        If DW11.Checked = True Then DW11.BackColor = Color.FromArgb(64, 64, 64)
-        If DW12.Checked = True Then DW12.BackColor = Color.FromArgb(64, 64, 64)
-        If DW13.Checked = True Then DW13.BackColor = Color.FromArgb(64, 64, 64)
-        If DW14.Checked = True Then DW14.BackColor = Color.FromArgb(64, 64, 64)
-        If DW15.Checked = True Then DW15.BackColor = Color.FromArgb(64, 64, 64)
-        If DW16.Checked = True Then DW16.BackColor = Color.FromArgb(64, 64, 64)
+        For Each Check as System.Windows.Forms.CheckBox in {DW1, DW2, DW3, DW4, DW5, DW6, DW7, DW8, DW9, DW10, DW11, DW12, DW13, DW14, DW15, DW16}
+            If Check.Checked Then Check.BackColor = Color.FromArgb(64, 64, 64)
+        Next
+
 
     End Sub
 
@@ -1465,50 +1332,9 @@ Public Class Form1
         '' Pedestal
         If PendantCount = 3 And InvertedLWAcc() Then CCLR(LW47) Else COFF(LW47)
                 
-        If LW1.Checked = True Then LW1.BackColor = Color.FromArgb(64, 64, 64)
-        If LW2.Checked = True Then LW2.BackColor = Color.FromArgb(64, 64, 64)
-        If LW6.Checked = True Then LW6.BackColor = Color.FromArgb(64, 64, 64)
-        If LW7.Checked = True Then LW7.BackColor = Color.FromArgb(64, 64, 64)
-        If LW8.Checked = True Then LW8.BackColor = Color.FromArgb(64, 64, 64)
-        If LW9.Checked = True Then LW9.BackColor = Color.FromArgb(64, 64, 64)
-        If LW10.Checked = True Then LW10.BackColor = Color.FromArgb(64, 64, 64)
-        If LW11.Checked = True Then LW11.BackColor = Color.FromArgb(64, 64, 64)
-        If LW12.Checked = True Then LW12.BackColor = Color.FromArgb(64, 64, 64)
-        If LW13.Checked = True Then LW13.BackColor = Color.FromArgb(64, 64, 64)
-        If LW14.Checked = True Then LW14.BackColor = Color.FromArgb(64, 64, 64)
-        If LW15.Checked = True Then LW15.BackColor = Color.FromArgb(64, 64, 64)
-        If LW16.Checked = True Then LW16.BackColor = Color.FromArgb(64, 64, 64)
-        If LW17.Checked = True Then LW17.BackColor = Color.FromArgb(64, 64, 64)
-        If LW18.Checked = True Then LW18.BackColor = Color.FromArgb(64, 64, 64)
-        If LW19.Checked = True Then LW19.BackColor = Color.FromArgb(64, 64, 64)
-        If LW20.Checked = True Then LW20.BackColor = Color.FromArgb(64, 64, 64)
-        If LW21.Checked = True Then LW21.BackColor = Color.FromArgb(64, 64, 64)
-        If LW22.Checked = True Then LW22.BackColor = Color.FromArgb(64, 64, 64)
-        If LW23.Checked = True Then LW23.BackColor = Color.FromArgb(64, 64, 64)
-        If LW24.Checked = True Then LW24.BackColor = Color.FromArgb(64, 64, 64)
-        If LW25.Checked = True Then LW25.BackColor = Color.FromArgb(64, 64, 64)
-        If LW26.Checked = True Then LW26.BackColor = Color.FromArgb(64, 64, 64)
-        If LW27.Checked = True Then LW27.BackColor = Color.FromArgb(64, 64, 64)
-        If LW28.Checked = True Then LW28.BackColor = Color.FromArgb(64, 64, 64)
-        If LW29.Checked = True Then LW29.BackColor = Color.FromArgb(64, 64, 64)
-        If LW30.Checked = True Then LW30.BackColor = Color.FromArgb(64, 64, 64)
-        If LW31.Checked = True Then LW31.BackColor = Color.FromArgb(64, 64, 64)
-        If LW32.Checked = True Then LW32.BackColor = Color.FromArgb(64, 64, 64)
-        If LW33.Checked = True Then LW33.BackColor = Color.FromArgb(64, 64, 64)
-        If LW34.Checked = True Then LW34.BackColor = Color.FromArgb(64, 64, 64)
-        If LW35.Checked = True Then LW35.BackColor = Color.FromArgb(64, 64, 64)
-        If LW36.Checked = True Then LW36.BackColor = Color.FromArgb(64, 64, 64)
-        If LW37.Checked = True Then LW37.BackColor = Color.FromArgb(64, 64, 64)
-        If LW38.Checked = True Then LW38.BackColor = Color.FromArgb(64, 64, 64)
-        If LW39.Checked = True Then LW39.BackColor = Color.FromArgb(64, 64, 64)
-        If LW40.Checked = True Then LW40.BackColor = Color.FromArgb(64, 64, 64)
-        If LW41.Checked = True Then LW41.BackColor = Color.FromArgb(64, 64, 64)
-        If LW42.Checked = True Then LW42.BackColor = Color.FromArgb(64, 64, 64)
-        If LW43.Checked = True Then LW43.BackColor = Color.FromArgb(64, 64, 64)
-        If LW44.Checked = True Then LW44.BackColor = Color.FromArgb(64, 64, 64)
-        If LW45.Checked = True Then LW45.BackColor = Color.FromArgb(64, 64, 64)
-        If LW46.Checked = True Then LW46.BackColor = Color.FromArgb(64, 64, 64)
-        If LW47.Checked = True Then LW47.BackColor = Color.FromArgb(64, 64, 64)
+        For Each Check as System.Windows.Forms.CheckBox in {LW1, LW2, LW6, LW7, LW8, LW9, LW10, LW11, LW12, LW13, LW14, LW15, LW16, LW17, LW18, LW19, LW20, LW21, LW22, LW23, LW24, LW25, LW26, LW27, LW28, LW29, LW30, LW31, LW32, LW33, LW34, LW35, LW36, LW37, LW38, LW39, LW40, LW41, LW42, LW43, LW44, LW45, LW46, LW47}
+            If Check.Checked Then Check.BackColor = Color.FromArgb(64, 64, 64)
+        Next
 
     End Sub
     Public Sub DWCheckInverted()
@@ -1621,22 +1447,9 @@ Public Class Form1
             COFF(DW16)
         End If
 
-        If DW1.Checked = True Then DW1.BackColor = Color.FromArgb(64, 64, 64)
-        If DW2.Checked = True Then DW2.BackColor = Color.FromArgb(64, 64, 64)
-        If DW3.Checked = True Then DW3.BackColor = Color.FromArgb(64, 64, 64)
-        If DW4.Checked = True Then DW4.BackColor = Color.FromArgb(64, 64, 64)
-        If DW5.Checked = True Then DW5.BackColor = Color.FromArgb(64, 64, 64)
-        If DW6.Checked = True Then DW6.BackColor = Color.FromArgb(64, 64, 64)
-        If DW7.Checked = True Then DW7.BackColor = Color.FromArgb(64, 64, 64)
-        If DW8.Checked = True Then DW8.BackColor = Color.FromArgb(64, 64, 64)
-        If DW9.Checked = True Then DW9.BackColor = Color.FromArgb(64, 64, 64)
-        If DW10.Checked = True Then DW10.BackColor = Color.FromArgb(64, 64, 64)
-        If DW11.Checked = True Then DW11.BackColor = Color.FromArgb(64, 64, 64)
-        If DW12.Checked = True Then DW12.BackColor = Color.FromArgb(64, 64, 64)
-        If DW13.Checked = True Then DW13.BackColor = Color.FromArgb(64, 64, 64)
-        If DW14.Checked = True Then DW14.BackColor = Color.FromArgb(64, 64, 64)
-        If DW15.Checked = True Then DW15.BackColor = Color.FromArgb(64, 64, 64)
-        If DW16.Checked = True Then DW16.BackColor = Color.FromArgb(64, 64, 64)
+        For Each Check as System.Windows.Forms.CheckBox in {DW1, DW2, DW3, DW4, DW5, DW6, DW7, DW8, DW9, DW10, DW11, DW12, DW13, DW14, DW15, DW16}
+            If Check.Checked Then Check.BackColor = Color.FromArgb(64, 64, 64)
+        Next
 
     End Sub
 
@@ -3543,7 +3356,7 @@ Public Class Form1
 
     Private Sub GTChests_MouseDown(sender As Object, e As EventArgs) Handles GTChests.MouseDown
         If MouseButtons = MouseButtons.Left Then NumChange(GTChests,27,-1,1)
-        If MouseButtons = MouseButtons.Right = True Then NumChange(GTChests,8,1,1)
+        If MouseButtons = MouseButtons.Right = True Then NumChange(GTChests,27,1,1)
     End Sub
 
     Private Sub GTKeys_MouseDown(sender As Object, e As EventArgs) Handles GTKeys.MouseDown
@@ -3851,8 +3664,6 @@ Public Class Form1
             HCBorder.BackColor = Color.Black
             HCKeys.Text = 0 : NumChange(HCKeys,1)
             HCPrizes.Text = 6 : NumChange(HCPrizes,6,,1)
-            
-			HCChests.ForeColor = Color.Yellow
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 HCChests.Text = 5 : NumChange(HCChests,5,,1)
             Else 
@@ -3862,59 +3673,39 @@ Public Class Form1
             EPBorder.BackColor = Color.Black
             EPKeys.Text = "-"
             EPPrizes.Text = 3 : NumChange(EPPrizes,3,,1)
-            EPMap.Checked = False
-            EPBigKey.Checked = False
-            EPBoss.Checked = False
-            EPChests.ForeColor = Color.Yellow
             EPLabel2.BackColor = Color.Black
             EPButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 EPChests.Text = 5 : NumChange(EPChests,5,,1)
-                EPReward = 0
                 EPButton.Image = My.Resources.crystal
             Else
                 EPChests.Text = 6 : NumChange(EPChests,5,,1)
-                EPReward = -1
                 EPButton.Image = Nothing
             End If
             LOFF(DPLabel)
             DPBorder.BackColor = Color.Black
             DPKeys.Text = 0 : NumChange(DPKeys,1)
             DPPrizes.Text = 2 : NumChange(DPPrizes,2,,1)
-            DPMap.Checked = False
-            DPBigKey.Checked = False
-            DPBoss.Checked = False
-            DPChests.ForeColor = Color.White
             DPLabel2.BackColor = Color.Black
             DPButton.BackColor = Color.Black
-            DPButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 DPChests.Text = 0 : NumChange(DPChests,4)
-                DPReward = 0
                 DPButton.Image = My.Resources.crystal
             Else
                 DPChests.Text = 6 : NumChange(DPChests,6,,1)
-                DPReward = -1
                 DPButton.Image = Nothing
             End If
             LOFF(TOHLabel)
             TOHBorder.BackColor = Color.Black
             TOHKeys.Text = 0 : NumChange(TOHKeys,1)
             TOHPrizes.Text = 2 : NumChange(TOHPrizes,2,,1)
-            HeraMap.Checked = False
-            HeraBigKey.Checked = False
-            HeraBoss.Checked = False
-            TOHChests.ForeColor = Color.White
             TOHLabel2.BackColor = Color.Black
             TOHButton.BackColor = Color.Black
-            TOHButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TOHChests.Text = 0 : NumChange(TOHChests,6)
-                TOHReward = 0
                 TOHButton.Image = My.Resources.crystal
             Else
                 TOHChests.Text = 6 : NumChange(TOHChests,6,,1)
-                TOHReward = -1
                 TOHButton.Image = Nothing
             End If
             LOFF(AGLabel)
@@ -3927,20 +3718,13 @@ Public Class Form1
             PODBorder.BackColor = Color.Black
             PODKeys.Text = 0 : NumChange(PODKeys,6)
             PODPrizes.Text = 5 : NumChange(PODPrizes,5,,1)
-            PODMap.Checked = False
-            PODBigKey.Checked = False
-            PODBoss.Checked = False
-            PODChests.ForeColor = Color.White
             PODLabel2.BackColor = Color.Black
             PODButton.BackColor = Color.Black
-            PODButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 PODChests.Text = 0 : NumChange(PODChests,14)
-                PODReward = 0
                 PODButton.Image = My.Resources.crystal
             Else
                 PODChests.Text = 14 : NumChange(PODChests,14,,1)
-                PODReward = -1
                 PODButton.Image = Nothing
             End If
             PODLabel2.BackColor = Color.Black
@@ -3949,19 +3733,13 @@ Public Class Form1
             SPBorder.BackColor = Color.Black
             SPKeys.Text = 0  : NumChange(SPKeys,1)
             SPPrizes.Text = 6  : NumChange(SPPrizes,6,,1)
-            SPMap.Checked = False
-            SPBigKey.Checked = False
-            SPBoss.Checked = False
-            SPChests.ForeColor = Color.White
             SPLabel2.BackColor = Color.Black
             SPButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 SPChests.Text = 0 : NumChange(SPChests,6)
-                SPReward = 0
                 SPButton.Image = My.Resources.crystal
             Else
                 SPChests.Text = 10 : NumChange(SPChests,10,,1)
-                SPReward = -1
                 SPButton.Image = Nothing
             End If
             SPLabel2.BackColor = Color.Black
@@ -3970,10 +3748,6 @@ Public Class Form1
             SWBorder.BackColor = Color.Black
             SWKeys.Text = 0 : NumChange(SWKeys,3)
             SWPrizes.Text = 2 : NumChange(SWPrizes,2,,1)
-            SWMap.Checked = False
-            SWBigKey.Checked = False
-            SWBoss.Checked = False
-            SWChests.ForeColor = Color.White
             SWLabel2.BackColor = Color.Black
             SWButton.BackColor = Color.Black
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
@@ -3991,20 +3765,13 @@ Public Class Form1
             TTBorder.BackColor = Color.Black
             TTKeys.Text = 0 : NumChange(TTKeys,1)
             TTPrizes.Text = 4 : NumChange(TTPrizes,4,,1)
-            TTMap.Checked = False
-            TTBigKey.Checked = False
-            TTBoss.Checked = False
-            TTChests.ForeColor = Color.White
             TTLabel2.BackColor = Color.Black
             TTButton.BackColor = Color.Black
-            TTButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TTChests.Text = 0 : NumChange(TTChests,8)
-                TTReward = 0
                 TTButton.Image = My.Resources.crystal
             Else
                 TTChests.Text = 8 : NumChange(TTChests,8,,1)
-                TTReward = -1
                 TTButton.Image = Nothing
             End If
             TTLabel2.BackColor = Color.Black
@@ -4013,20 +3780,13 @@ Public Class Form1
             IPBorder.BackColor = Color.Black
             IPKeys.Text = 0 : NumChange(IPKeys,3)
             IPPrizes.Text = 3 : NumChange(IPPrizes,3,,1)
-            IPMap.Checked = False
-            IPBigKey.Checked = False
-            IPBoss.Checked = False
-            IPChests.ForeColor = Color.White
             IPLabel2.BackColor = Color.Black
             IPButton.BackColor = Color.Black
-            IPButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 IPChests.Text = 0 : NumChange(IPChests,3)
-                IPReward = 0
                 IPButton.Image = My.Resources.crystal
             Else
                 IPChests.Text = 8 : NumChange(IPChests,8,,1)
-                IPReward = -1
                 IPButton.Image = Nothing
             End If
             IPLabel2.BackColor = Color.Black
@@ -4035,20 +3795,13 @@ Public Class Form1
             MMBorder.BackColor = Color.Black
             MMKeys.Text = 0 : NumChange(MMKeys,3)
             MMPrizes.Text = 2 : NumChange(MMPrizes,2,,1)
-            MMMap.Checked = False
-            MMBigKey.Checked = False
-            MMBoss.Checked = False
-            MMChests.ForeColor = Color.White
             MMLabel2.BackColor = Color.Black
             MMButton.BackColor = Color.Black
-            MMButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 MMChests.Text = 0 : NumChange(MMChests,8)
-                MMReward = 0
                 MMButton.Image = My.Resources.crystal
             Else
                 MMChests.Text = 8 : NumChange(MMChests,8,,1)
-                MMReward = -1
                 MMButton.Image = Nothing
             End If
             MMLabel2.BackColor = Color.Black
@@ -4059,20 +3812,13 @@ Public Class Form1
             TRBorder.BackColor = Color.Black
             TRKeys.Text = 0 : NumChange(TRKeys,4)
             TRPrizes.Text = 5 : NumChange(TRPrizes,5,,1)
-            TRMap.Checked = False
-            TRBigKey.Checked = False
-            TRBoss.Checked = False
-            TRChests.ForeColor = Color.White
             TRLabel2.BackColor = Color.Black
             TRButton.BackColor = Color.Black
-            TRButton.Image = Nothing
             If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
                 TRChests.Text = 0 : NumChange(TRChests,12)
-                TRReward = 0
                 TRButton.Image = My.Resources.crystal
             Else
                 TRChests.Text = 12 : NumChange(TRChests,12,,1)
-                TRReward = -1
                 TRButton.Image = Nothing
             End If
             TRLabel2.BackColor = Color.Black
@@ -4082,26 +3828,16 @@ Public Class Form1
             LOFF(GTLabel)
             GTBorder.BackColor = Color.Black
             GTKeys.Text = 0 : NumChange(GTKeys,4)
-            GTBigKey.Checked = False
-            GTChests.ForeColor = Color.White
             GTChests.Text = 27 : NumChange(GTChests,27,,1)
+
+            ChangeReward()
+            For Each Check as System.Windows.Forms.CheckBox in {EPMap, EPBigKey, EPBoss, DPMap, DPBigKey, DPBoss, HeraMap, HeraBigKey, HeraBoss, PODMap, PODBigKey, PODBoss, SPMap, SPBigKey, SPBoss, SWMap, SWBigKey, SWBoss, TTMap, TTBigKey, TTBoss, IPMap, IPBigKey, IPBoss, MMMap, MMBigKey, MMBoss, TRMap, TRBigKey, TRBoss, GTBigKey}
+                    Check.Checked = False
+            Next
             ' Resetting all Sphere 1 locations
-            LW1.Checked = False
-            LW2.Checked = False
-            LW7.Checked = False
-            LW8.Checked = False
-            LW9.Checked = False
-            LW10.Checked = False
-            LW11.Checked = False
-            LW13.Checked = False
-            LW17.Checked = False
-            LW32.Checked = False
-            LW36.Checked = False
-            DW2.Checked = False
-            DW3.Checked = False            
-            DW4.Checked = False
-            DW5.Checked = False
-            DW10.Checked = False
+            For Each Check as System.Windows.Forms.CheckBox in {LW1, LW2, LW7, LW8, LW9, LW10, LW11, LW13, LW17, LW32, LW36, DW2, DW3, DW4, DW5, DW10}
+                    Check.Checked = False
+            Next
             ' Resetting all scoutable items
             AgaTree = 0
             Button1.Image = My.Resources.chestmaybesmall
