@@ -296,7 +296,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ALttP - VT_no-glitches-29_normal-standard-ganon_xRv2onwNyl000.ico" />
-    <Content Include="alttp___vt_no_glitches_29_normal_standard_ganon_xrv2onwnyl000_xEK_icon.ico" />
     <Content Include="Resources\Agsonly.png" />
     <None Include="Resources\quartermagic.png" />
     <None Include="Resources\magicbottle.png" />
