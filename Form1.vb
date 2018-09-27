@@ -244,7 +244,7 @@ Public Class Form1
     ''Labels Clearable/SequenceBreak/PartialClearable/Off
     Private Sub LCLR (ByVal Label as System.Windows.Forms.Label)
         Label.BackColor = Color.Green
-        Label.ForeColor = Color.White
+        Label.ForeColor = Color.WhiteSmoke
     End Sub
 
     Private Sub LSQB (ByVal Label as System.Windows.Forms.Label)
@@ -1415,6 +1415,12 @@ Public Class Form1
         ElseIf Boots And ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) Then
             COFF(DW15)
             DW15.TextAlign = ContentAlignment.MiddleLeft
+            DW15Boots.BackColor = Color.WhiteSmoke
+            DW15Boots.Visible = True
+        ElseIf Boots And Glove > 0 Then
+            COFF(DW15)
+            DW15.TextAlign = ContentAlignment.MiddleLeft
+            DW15Boots.BackColor = Color.Orange
             DW15Boots.Visible = True
         Else
             COFF(DW15)
@@ -3682,6 +3688,7 @@ Public Class Form1
             LOFF(AGLabel)
             AGKeys.Text = 0 : NumChange(AGKeys,2)
             AGChests.Text = 2 : NumChange(AGChests,2,,1)
+            AGPrizes.Text = 2 : NumChange(AGPrizes,2,,1)
             AgaButton.Visible = False
             Aganhim = False
             LOFF(PODLabel)
