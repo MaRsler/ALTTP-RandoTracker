@@ -1392,10 +1392,10 @@ Partial Class Form1
         Me.LW21.ForeColor = System.Drawing.Color.Black
         Me.LW21.Location = New System.Drawing.Point(535, 67)
         Me.LW21.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW21.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW21.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW21.MaximumSize = New System.Drawing.Size(70, 24)
+        Me.LW21.MinimumSize = New System.Drawing.Size(70, 24)
         Me.LW21.Name = "LW21"
-        Me.LW21.Size = New System.Drawing.Size(60, 24)
+        Me.LW21.Size = New System.Drawing.Size(70, 24)
         Me.LW21.TabIndex = 531
         Me.LW21.Text = "Sahas (3)"
         Me.LW21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1410,7 +1410,7 @@ Partial Class Form1
         Me.LW20.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW20.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW20.ForeColor = System.Drawing.Color.Black
-        Me.LW20.Location = New System.Drawing.Point(595, 67)
+        Me.LW20.Location = New System.Drawing.Point(605, 67)
         Me.LW20.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW20.MaximumSize = New System.Drawing.Size(60, 24)
         Me.LW20.MinimumSize = New System.Drawing.Size(60, 24)
@@ -1430,7 +1430,7 @@ Partial Class Form1
         Me.LW19.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW19.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW19.ForeColor = System.Drawing.Color.Black
-        Me.LW19.Location = New System.Drawing.Point(655, 67)
+        Me.LW19.Location = New System.Drawing.Point(665, 67)
         Me.LW19.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW19.MaximumSize = New System.Drawing.Size(84, 24)
         Me.LW19.MinimumSize = New System.Drawing.Size(84, 24)
@@ -1488,7 +1488,7 @@ Partial Class Form1
         Me.LW16.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW16.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW16.ForeColor = System.Drawing.Color.Black
-        Me.LW16.Location = New System.Drawing.Point(655, 43)
+        Me.LW16.Location = New System.Drawing.Point(665, 43)
         Me.LW16.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW16.MaximumSize = New System.Drawing.Size(60, 24)
         Me.LW16.MinimumSize = New System.Drawing.Size(60, 24)
@@ -1547,7 +1547,7 @@ Partial Class Form1
         Me.LW13.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW13.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW13.ForeColor = System.Drawing.Color.Black
-        Me.LW13.Location = New System.Drawing.Point(595, 43)
+        Me.LW13.Location = New System.Drawing.Point(605, 43)
         Me.LW13.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW13.MaximumSize = New System.Drawing.Size(60, 24)
         Me.LW13.MinimumSize = New System.Drawing.Size(60, 24)
@@ -1569,10 +1569,10 @@ Partial Class Form1
         Me.LW12.ForeColor = System.Drawing.Color.Black
         Me.LW12.Location = New System.Drawing.Point(535, 43)
         Me.LW12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW12.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW12.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW12.MaximumSize = New System.Drawing.Size(70, 24)
+        Me.LW12.MinimumSize = New System.Drawing.Size(70, 24)
         Me.LW12.Name = "LW12"
-        Me.LW12.Size = New System.Drawing.Size(60, 24)
+        Me.LW12.Size = New System.Drawing.Size(70, 24)
         Me.LW12.TabIndex = 522
         Me.LW12.Text = "Chickens"
         Me.LW12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1624,7 +1624,7 @@ Partial Class Form1
         Me.LW9.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW9.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW9.ForeColor = System.Drawing.Color.Black
-        Me.LW9.Location = New System.Drawing.Point(655, 19)
+        Me.LW9.Location = New System.Drawing.Point(665, 19)
         Me.LW9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW9.MaximumSize = New System.Drawing.Size(84, 24)
         Me.LW9.MinimumSize = New System.Drawing.Size(84, 24)
@@ -1643,7 +1643,7 @@ Partial Class Form1
         Me.LW8.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.LW8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LW8.ForeColor = System.Drawing.Color.Black
-        Me.LW8.Location = New System.Drawing.Point(595, 19)
+        Me.LW8.Location = New System.Drawing.Point(605, 19)
         Me.LW8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW8.MaximumSize = New System.Drawing.Size(60, 24)
         Me.LW8.MinimumSize = New System.Drawing.Size(60, 24)
@@ -1664,12 +1664,12 @@ Partial Class Form1
         Me.LW7.ForeColor = System.Drawing.Color.Black
         Me.LW7.Location = New System.Drawing.Point(535, 19)
         Me.LW7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW7.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW7.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW7.MaximumSize = New System.Drawing.Size(70, 24)
+        Me.LW7.MinimumSize = New System.Drawing.Size(70, 24)
         Me.LW7.Name = "LW7"
-        Me.LW7.Size = New System.Drawing.Size(60, 24)
+        Me.LW7.Size = New System.Drawing.Size(70, 24)
         Me.LW7.TabIndex = 517
-        Me.LW7.Text = "Mush. Spot"
+        Me.LW7.Text = "Mush Spot"
         Me.LW7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW7.UseVisualStyleBackColor = False
         '
@@ -2975,7 +2975,7 @@ Partial Class Form1
         'Button3
         '
         Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
-        Me.Button3.Location = New System.Drawing.Point(715, 43)
+        Me.Button3.Location = New System.Drawing.Point(725, 43)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(24, 24)
