@@ -675,6 +675,16 @@ Public Class Form1
 
     
     Public Sub LWCheckNormal()
+        ''Sphere1
+        CCLR(LW1)
+        CCLR(LW2)
+        CCLR(LW7)
+        CCLR(LW8)
+        CCLR(LW9)
+        CCLR(LW11)
+        CCLR(LW13)
+        CCLR(LW17)
+        
         '' Lumberjack Tree - Aganhim and Boots
         If Aganhim And Boots Then
             CCLR(LW6)
@@ -1591,7 +1601,7 @@ Public Class Form1
     End Sub
 
     Private Sub HCChests_MouseDown(sender As Object, e As EventArgs) Handles HCChests.MouseDown
-        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
+        If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then
             If MouseButtons = MouseButtons.Left Then NumChange(HCChests,8,-1,1)
             If MouseButtons = MouseButtons.Right Then NumChange(HCChests,8,1,1)
         End If
