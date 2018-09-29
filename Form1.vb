@@ -1620,7 +1620,7 @@ Public Class Form1
                 NumChange(HCPrizes,6,-1,1)
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(HCPrizes,6,1,1)
                 Else
                     NumChange(HCPrizes,7,1,1)
@@ -1821,7 +1821,7 @@ Public Class Form1
                 If DPPrizes.Text = 0 Then DPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(DPPrizes,2,1,1)
                 Else
                     NumChange(DPPrizes,3,1,1)
@@ -1968,7 +1968,7 @@ Public Class Form1
                 If TOHPrizes.Text = 0 Then TOHLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(TOHPrizes,2,1,1)
                 Else
                     NumChange(TOHPrizes,3,1,1)
@@ -2219,7 +2219,7 @@ Public Class Form1
     Private Sub PODChests_MouseDown(sender As Object, e As EventArgs) Handles PODChests.MouseDown
         If ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Or ComboBox1.SelectedIndex = 10 Then
             If MouseButtons = MouseButtons.Left Then
-                NumChange(PODChests,6,-1,1)
+                NumChange(PODChests,5,-1,1)
                 If PODChests.Text = 0 Then PODLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
@@ -2231,12 +2231,12 @@ Public Class Form1
     Private Sub PODPrizes_MouseDown(sender As Object, e As EventArgs) Handles PODPrizes.MouseDown
         If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
             If MouseButtons = MouseButtons.Left Then
-                NumChange(PODPrizes,6,-1,1)
+                NumChange(PODPrizes,5,-1,1)
                 If PODPrizes.Text = 0 Then PODLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
-                    NumChange(PODPrizes,6,1,1)
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
+                    NumChange(PODPrizes,5,1,1)
                 Else
                     NumChange(PODPrizes,11,1,1)
                 End If
@@ -2400,7 +2400,7 @@ Public Class Form1
                 If SPPrizes.Text = 0 Then SPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(SPPrizes,6,1,1)
                 Else
                     NumChange(SPPrizes,7,1,1)
@@ -2533,7 +2533,7 @@ Public Class Form1
                 If SWPrizes.Text = 0 Then SWLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(SWPrizes,2,1,1)
                 Else
                     NumChange(SWPrizes,5,1,1)
@@ -2655,7 +2655,7 @@ Public Class Form1
                 If TTPrizes.Text = 0 Then TTLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(TTPrizes,4,1,1)
                 Else
                     NumChange(TTPrizes,5,1,1)
@@ -2773,7 +2773,7 @@ Public Class Form1
                 If IPPrizes.Text = 0 Then IPLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(IPPrizes,3,1,1)
                 Else
                     NumChange(IPPrizes,5,1,1)
@@ -2927,7 +2927,7 @@ Public Class Form1
                 If MMPrizes.Text = 0 Then MMLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(MMPrizes,2,1,1)
                 Else
                     NumChange(MMPrizes,5,1,1)
@@ -3110,7 +3110,7 @@ Public Class Form1
                 If TRPrizes.Text = 0 Then TRLabel2.BackColor = Color.Green
             End If
             If MouseButtons = MouseButtons.Right Then
-                If ComboBox1.SelectedIndex = 0 Then
+                If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 9 Then
                     NumChange(TRPrizes,5,1,1)
                 Else
                     NumChange(TRPrizes,9,1,1)
