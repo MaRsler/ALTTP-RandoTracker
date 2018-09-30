@@ -2846,7 +2846,7 @@ Public Class Form1
                 IPBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
-            If (FireRod Or (Bombos And SLcheck())) And Hammer And Hookshot And Glove > 0 Then
+            If (FireRod Or (Bombos And SLcheck())) And Hammer And Glove > 0 Then
                 IPBoss.Enabled = True
                 If Flippers Then
                     LCLR(IPLabel)
@@ -2875,7 +2875,7 @@ Public Class Form1
                 IPBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
-            If (FireRod Or (Bombos And SLcheck())) And Hammer Then
+            If (FireRod Or (Bombos And SLcheck())) And Hammer And Glove > 0 Then
                 If Flippers And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria)) Then LCLR(IPLabel) Else LSQB(IPLabel)
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
