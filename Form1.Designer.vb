@@ -257,6 +257,21 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me.Button13 = New System.Windows.Forms.Button()
+        Me.Button14 = New System.Windows.Forms.Button()
+        Me.Button15 = New System.Windows.Forms.Button()
+        Me.Button16 = New System.Windows.Forms.Button()
+        Me.Button17 = New System.Windows.Forms.Button()
+        Me.Button18 = New System.Windows.Forms.Button()
+        Me.Button19 = New System.Windows.Forms.Button()
+        Me.Button20 = New System.Windows.Forms.Button()
+        Me.Button21 = New System.Windows.Forms.Button()
+        Me.Button22 = New System.Windows.Forms.Button()
+        Me.Button23 = New System.Windows.Forms.Button()
+        Me.Button24 = New System.Windows.Forms.Button()
+        Me.Button25 = New System.Windows.Forms.Button()
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
         CType(Me.MagicButton, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TurtleBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MireBEQ, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -556,12 +571,11 @@ Partial Class Form1
         Me.DW16.Location = New System.Drawing.Point(684, 390)
         Me.DW16.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW16.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.DW16.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.DW16.MinimumSize = New System.Drawing.Size(66, 24)
         Me.DW16.Name = "DW16"
-        Me.DW16.Size = New System.Drawing.Size(90, 24)
+        Me.DW16.Size = New System.Drawing.Size(69, 24)
         Me.DW16.TabIndex = 573
         Me.DW16.Text = "Pyr Fairy (2)"
-        Me.DW16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.DW16.UseVisualStyleBackColor = False
         '
         'DW15
@@ -581,7 +595,6 @@ Partial Class Form1
         Me.DW15.Size = New System.Drawing.Size(90, 24)
         Me.DW15.TabIndex = 572
         Me.DW15.Text = "Hookshot (4)"
-        Me.DW15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.DW15.UseVisualStyleBackColor = False
         '
         'DW14
@@ -636,9 +649,9 @@ Partial Class Form1
         Me.DW12.Location = New System.Drawing.Point(504, 250)
         Me.DW12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW12.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.DW12.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.DW12.MinimumSize = New System.Drawing.Size(66, 24)
         Me.DW12.Name = "DW12"
-        Me.DW12.Size = New System.Drawing.Size(90, 24)
+        Me.DW12.Size = New System.Drawing.Size(66, 24)
         Me.DW12.TabIndex = 569
         Me.DW12.Text = "Catfish"
         Me.DW12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -716,9 +729,9 @@ Partial Class Form1
         Me.DW8.Location = New System.Drawing.Point(504, 343)
         Me.DW8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW8.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.DW8.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.DW8.MinimumSize = New System.Drawing.Size(66, 24)
         Me.DW8.Name = "DW8"
-        Me.DW8.Size = New System.Drawing.Size(90, 24)
+        Me.DW8.Size = New System.Drawing.Size(68, 24)
         Me.DW8.TabIndex = 565
         Me.DW8.Text = "Purple Chest"
         Me.DW8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -776,9 +789,9 @@ Partial Class Form1
         Me.DW5.Location = New System.Drawing.Point(414, 319)
         Me.DW5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DW5.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.DW5.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.DW5.MinimumSize = New System.Drawing.Size(66, 24)
         Me.DW5.Name = "DW5"
-        Me.DW5.Size = New System.Drawing.Size(90, 24)
+        Me.DW5.Size = New System.Drawing.Size(73, 24)
         Me.DW5.TabIndex = 562
         Me.DW5.Text = "Digging Game"
         Me.DW5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -895,12 +908,11 @@ Partial Class Form1
         Me.LW46.Location = New System.Drawing.Point(684, 414)
         Me.LW46.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW46.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW46.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW46.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW46.Name = "LW46"
-        Me.LW46.Size = New System.Drawing.Size(90, 24)
+        Me.LW46.Size = New System.Drawing.Size(66, 24)
         Me.LW46.TabIndex = 556
-        Me.LW46.Text = "Green Pendant"
-        Me.LW46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.LW46.Text = "Green Pend"
         Me.LW46.UseVisualStyleBackColor = False
         '
         'LW45
@@ -915,12 +927,11 @@ Partial Class Form1
         Me.LW45.Location = New System.Drawing.Point(504, 462)
         Me.LW45.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW45.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW45.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW45.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW45.Name = "LW45"
-        Me.LW45.Size = New System.Drawing.Size(90, 24)
+        Me.LW45.Size = New System.Drawing.Size(66, 24)
         Me.LW45.TabIndex = 555
         Me.LW45.Text = "Mimic Cave"
-        Me.LW45.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW45.UseVisualStyleBackColor = False
         '
         'LW44
@@ -1095,9 +1106,9 @@ Partial Class Form1
         Me.LW36.Location = New System.Drawing.Point(534, 205)
         Me.LW36.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW36.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW36.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW36.MinimumSize = New System.Drawing.Size(36, 24)
         Me.LW36.Name = "LW36"
-        Me.LW36.Size = New System.Drawing.Size(60, 24)
+        Me.LW36.Size = New System.Drawing.Size(36, 24)
         Me.LW36.TabIndex = 546
         Me.LW36.Text = "Zora"
         Me.LW36.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1135,12 +1146,11 @@ Partial Class Form1
         Me.LW34.Location = New System.Drawing.Point(504, 160)
         Me.LW34.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW34.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW34.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW34.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW34.Name = "LW34"
-        Me.LW34.Size = New System.Drawing.Size(90, 24)
+        Me.LW34.Size = New System.Drawing.Size(66, 24)
         Me.LW34.TabIndex = 544
         Me.LW34.Text = "Potion Shop"
-        Me.LW34.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW34.UseVisualStyleBackColor = False
         '
         'LW33
@@ -1173,9 +1183,9 @@ Partial Class Form1
         Me.LW32.Location = New System.Drawing.Point(414, 205)
         Me.LW32.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW32.MaximumSize = New System.Drawing.Size(60, 24)
-        Me.LW32.MinimumSize = New System.Drawing.Size(60, 24)
+        Me.LW32.MinimumSize = New System.Drawing.Size(37, 24)
         Me.LW32.Name = "LW32"
-        Me.LW32.Size = New System.Drawing.Size(60, 24)
+        Me.LW32.Size = New System.Drawing.Size(37, 24)
         Me.LW32.TabIndex = 542
         Me.LW32.Text = "Hobo"
         Me.LW32.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1213,11 +1223,11 @@ Partial Class Form1
         Me.LW30.Location = New System.Drawing.Point(504, 136)
         Me.LW30.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW30.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW30.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW30.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW30.Name = "LW30"
-        Me.LW30.Size = New System.Drawing.Size(90, 24)
+        Me.LW30.Size = New System.Drawing.Size(66, 24)
         Me.LW30.TabIndex = 540
-        Me.LW30.Text = "Grave Ledge"
+        Me.LW30.Text = "GY Ledge"
         Me.LW30.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.LW30.UseVisualStyleBackColor = False
         '
@@ -1272,10 +1282,10 @@ Partial Class Form1
         Me.LW27.ForeColor = System.Drawing.Color.Black
         Me.LW27.Location = New System.Drawing.Point(414, 160)
         Me.LW27.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW27.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW27.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW27.MaximumSize = New System.Drawing.Size(66, 24)
+        Me.LW27.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW27.Name = "LW27"
-        Me.LW27.Size = New System.Drawing.Size(90, 24)
+        Me.LW27.Size = New System.Drawing.Size(66, 24)
         Me.LW27.TabIndex = 537
         Me.LW27.Text = "Flute Spot"
         Me.LW27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1292,10 +1302,10 @@ Partial Class Form1
         Me.LW26.ForeColor = System.Drawing.Color.Black
         Me.LW26.Location = New System.Drawing.Point(594, 319)
         Me.LW26.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW26.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW26.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW26.MaximumSize = New System.Drawing.Size(66, 24)
+        Me.LW26.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW26.Name = "LW26"
-        Me.LW26.Size = New System.Drawing.Size(90, 24)
+        Me.LW26.Size = New System.Drawing.Size(66, 24)
         Me.LW26.TabIndex = 536
         Me.LW26.Text = "Magic Bat"
         Me.LW26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1313,9 +1323,9 @@ Partial Class Form1
         Me.LW25.Location = New System.Drawing.Point(684, 319)
         Me.LW25.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.LW25.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW25.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW25.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW25.Name = "LW25"
-        Me.LW25.Size = New System.Drawing.Size(90, 24)
+        Me.LW25.Size = New System.Drawing.Size(66, 24)
         Me.LW25.TabIndex = 535
         Me.LW25.Text = "Blacksmith"
         Me.LW25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1432,10 +1442,10 @@ Partial Class Form1
         Me.LW19.ForeColor = System.Drawing.Color.Black
         Me.LW19.Location = New System.Drawing.Point(665, 67)
         Me.LW19.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW19.MaximumSize = New System.Drawing.Size(84, 24)
-        Me.LW19.MinimumSize = New System.Drawing.Size(84, 24)
+        Me.LW19.MaximumSize = New System.Drawing.Size(60, 24)
+        Me.LW19.MinimumSize = New System.Drawing.Size(60, 24)
         Me.LW19.Name = "LW19"
-        Me.LW19.Size = New System.Drawing.Size(84, 24)
+        Me.LW19.Size = New System.Drawing.Size(60, 24)
         Me.LW19.TabIndex = 529
         Me.LW19.Text = "Aginah"
         Me.LW19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1530,10 +1540,10 @@ Partial Class Form1
         Me.LW14.ForeColor = System.Drawing.Color.Black
         Me.LW14.Location = New System.Drawing.Point(504, 112)
         Me.LW14.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
-        Me.LW14.MaximumSize = New System.Drawing.Size(90, 24)
-        Me.LW14.MinimumSize = New System.Drawing.Size(90, 24)
+        Me.LW14.MaximumSize = New System.Drawing.Size(66, 24)
+        Me.LW14.MinimumSize = New System.Drawing.Size(66, 24)
         Me.LW14.Name = "LW14"
-        Me.LW14.Size = New System.Drawing.Size(90, 24)
+        Me.LW14.Size = New System.Drawing.Size(66, 24)
         Me.LW14.TabIndex = 524
         Me.LW14.Text = "Sick Kid"
         Me.LW14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1918,12 +1928,12 @@ Partial Class Form1
         '
         Me.BottleNumber.AutoSize = True
         Me.BottleNumber.BackColor = System.Drawing.Color.Black
-        Me.BottleNumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.BottleNumber.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.BottleNumber.ForeColor = System.Drawing.Color.White
         Me.BottleNumber.Location = New System.Drawing.Point(23, 129)
         Me.BottleNumber.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.BottleNumber.Name = "BottleNumber"
-        Me.BottleNumber.Size = New System.Drawing.Size(13, 13)
+        Me.BottleNumber.Size = New System.Drawing.Size(10, 12)
         Me.BottleNumber.TabIndex = 737
         Me.BottleNumber.Text = "0"
         Me.BottleNumber.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
@@ -1947,7 +1957,7 @@ Partial Class Form1
         Me.AGPrizes.BackColor = System.Drawing.Color.Black
         Me.AGPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGPrizes.ForeColor = System.Drawing.Color.White
-        Me.AGPrizes.Image = CType(resources.GetObject("AGPrizes.Image"), System.Drawing.Image)
+        Me.AGPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.AGPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AGPrizes.Location = New System.Drawing.Point(281, 183)
         Me.AGPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2000,7 +2010,7 @@ Partial Class Form1
         Me.TRBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.TRBigKey.AutoSize = True
         Me.TRBigKey.BackColor = System.Drawing.Color.Red
-        Me.TRBigKey.Image = CType(resources.GetObject("TRBigKey.Image"), System.Drawing.Image)
+        Me.TRBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.TRBigKey.Location = New System.Drawing.Point(341, 304)
         Me.TRBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2015,7 +2025,7 @@ Partial Class Form1
         Me.MMBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.MMBigKey.AutoSize = True
         Me.MMBigKey.BackColor = System.Drawing.Color.Red
-        Me.MMBigKey.Image = CType(resources.GetObject("MMBigKey.Image"), System.Drawing.Image)
+        Me.MMBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.MMBigKey.Location = New System.Drawing.Point(341, 280)
         Me.MMBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2029,7 +2039,7 @@ Partial Class Form1
         '
         Me.IPBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.IPBigKey.AutoSize = True
-        Me.IPBigKey.Image = CType(resources.GetObject("IPBigKey.Image"), System.Drawing.Image)
+        Me.IPBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.IPBigKey.Location = New System.Drawing.Point(341, 256)
         Me.IPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2044,7 +2054,7 @@ Partial Class Form1
         Me.TTBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.TTBigKey.AutoSize = True
         Me.TTBigKey.BackColor = System.Drawing.Color.Red
-        Me.TTBigKey.Image = CType(resources.GetObject("TTBigKey.Image"), System.Drawing.Image)
+        Me.TTBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.TTBigKey.Location = New System.Drawing.Point(341, 232)
         Me.TTBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2073,7 +2083,7 @@ Partial Class Form1
         Me.GTBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.GTBigKey.AutoSize = True
         Me.GTBigKey.BackColor = System.Drawing.Color.Red
-        Me.GTBigKey.Image = CType(resources.GetObject("GTBigKey.Image"), System.Drawing.Image)
+        Me.GTBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.GTBigKey.Location = New System.Drawing.Point(115, 328)
         Me.GTBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.GTBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2087,7 +2097,7 @@ Partial Class Form1
         '
         Me.SPBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.SPBigKey.AutoSize = True
-        Me.SPBigKey.Image = CType(resources.GetObject("SPBigKey.Image"), System.Drawing.Image)
+        Me.SPBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.SPBigKey.Location = New System.Drawing.Point(139, 304)
         Me.SPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2102,7 +2112,7 @@ Partial Class Form1
         Me.PODBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.PODBigKey.AutoSize = True
         Me.PODBigKey.BackColor = System.Drawing.Color.Red
-        Me.PODBigKey.Image = CType(resources.GetObject("PODBigKey.Image"), System.Drawing.Image)
+        Me.PODBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.PODBigKey.Location = New System.Drawing.Point(139, 280)
         Me.PODBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2117,7 +2127,7 @@ Partial Class Form1
         Me.HeraBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.HeraBigKey.AutoSize = True
         Me.HeraBigKey.BackColor = System.Drawing.Color.Red
-        Me.HeraBigKey.Image = CType(resources.GetObject("HeraBigKey.Image"), System.Drawing.Image)
+        Me.HeraBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.HeraBigKey.Location = New System.Drawing.Point(139, 256)
         Me.HeraBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2132,7 +2142,7 @@ Partial Class Form1
         Me.DPBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.DPBigKey.AutoSize = True
         Me.DPBigKey.BackColor = System.Drawing.Color.Red
-        Me.DPBigKey.Image = CType(resources.GetObject("DPBigKey.Image"), System.Drawing.Image)
+        Me.DPBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.DPBigKey.Location = New System.Drawing.Point(139, 232)
         Me.DPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2147,7 +2157,7 @@ Partial Class Form1
         Me.EPBigKey.Appearance = System.Windows.Forms.Appearance.Button
         Me.EPBigKey.AutoSize = True
         Me.EPBigKey.BackColor = System.Drawing.Color.Red
-        Me.EPBigKey.Image = Global.RandoTracker.My.Resources.Resources.nobigkeysmall
+        Me.EPBigKey.Image = CType(resources.GetObject("BigKey.Image"), System.Drawing.Image)
         Me.EPBigKey.Location = New System.Drawing.Point(139, 208)
         Me.EPBigKey.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBigKey.MinimumSize = New System.Drawing.Size(24, 24)
@@ -2163,7 +2173,7 @@ Partial Class Form1
         Me.GTChests.BackColor = System.Drawing.Color.Black
         Me.GTChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTChests.ForeColor = System.Drawing.Color.White
-        Me.GTChests.Image = CType(resources.GetObject("GTChests.Image"), System.Drawing.Image)
+        Me.GTChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.GTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.GTChests.Location = New System.Drawing.Point(39, 327)
         Me.GTChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2181,7 +2191,7 @@ Partial Class Form1
         Me.TRChests.BackColor = System.Drawing.Color.Black
         Me.TRChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRChests.ForeColor = System.Drawing.Color.White
-        Me.TRChests.Image = CType(resources.GetObject("TRChests.Image"), System.Drawing.Image)
+        Me.TRChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.TRChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TRChests.Location = New System.Drawing.Point(241, 303)
         Me.TRChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2198,7 +2208,7 @@ Partial Class Form1
         Me.MMChests.BackColor = System.Drawing.Color.Black
         Me.MMChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMChests.ForeColor = System.Drawing.Color.White
-        Me.MMChests.Image = CType(resources.GetObject("MMChests.Image"), System.Drawing.Image)
+        Me.MMChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.MMChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MMChests.Location = New System.Drawing.Point(241, 279)
         Me.MMChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2215,7 +2225,7 @@ Partial Class Form1
         Me.IPChests.BackColor = System.Drawing.Color.Black
         Me.IPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPChests.ForeColor = System.Drawing.Color.White
-        Me.IPChests.Image = CType(resources.GetObject("IPChests.Image"), System.Drawing.Image)
+        Me.IPChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.IPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IPChests.Location = New System.Drawing.Point(241, 255)
         Me.IPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2232,7 +2242,7 @@ Partial Class Form1
         Me.TTChests.BackColor = System.Drawing.Color.Black
         Me.TTChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTChests.ForeColor = System.Drawing.Color.White
-        Me.TTChests.Image = CType(resources.GetObject("TTChests.Image"), System.Drawing.Image)
+        Me.TTChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.TTChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TTChests.Location = New System.Drawing.Point(241, 231)
         Me.TTChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2249,7 +2259,7 @@ Partial Class Form1
         Me.SWChests.BackColor = System.Drawing.Color.Black
         Me.SWChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWChests.ForeColor = System.Drawing.Color.White
-        Me.SWChests.Image = CType(resources.GetObject("SWChests.Image"), System.Drawing.Image)
+        Me.SWChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.SWChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SWChests.Location = New System.Drawing.Point(241, 207)
         Me.SWChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2266,7 +2276,7 @@ Partial Class Form1
         Me.AGChests.BackColor = System.Drawing.Color.Black
         Me.AGChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGChests.ForeColor = System.Drawing.Color.White
-        Me.AGChests.Image = CType(resources.GetObject("AGChests.Image"), System.Drawing.Image)
+        Me.AGChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.AGChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AGChests.Location = New System.Drawing.Point(241, 183)
         Me.AGChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2284,7 +2294,7 @@ Partial Class Form1
         Me.SPChests.BackColor = System.Drawing.Color.Black
         Me.SPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPChests.ForeColor = System.Drawing.Color.White
-        Me.SPChests.Image = CType(resources.GetObject("SPChests.Image"), System.Drawing.Image)
+        Me.SPChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.SPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SPChests.Location = New System.Drawing.Point(39, 303)
         Me.SPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2301,7 +2311,7 @@ Partial Class Form1
         Me.PODChests.BackColor = System.Drawing.Color.Black
         Me.PODChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODChests.ForeColor = System.Drawing.Color.White
-        Me.PODChests.Image = CType(resources.GetObject("PODChests.Image"), System.Drawing.Image)
+        Me.PODChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.PODChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.PODChests.Location = New System.Drawing.Point(39, 279)
         Me.PODChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2318,7 +2328,7 @@ Partial Class Form1
         Me.TOHChests.BackColor = System.Drawing.Color.Black
         Me.TOHChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHChests.ForeColor = System.Drawing.Color.White
-        Me.TOHChests.Image = CType(resources.GetObject("TOHChests.Image"), System.Drawing.Image)
+        Me.TOHChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.TOHChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TOHChests.Location = New System.Drawing.Point(39, 255)
         Me.TOHChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2335,7 +2345,7 @@ Partial Class Form1
         Me.DPChests.BackColor = System.Drawing.Color.Black
         Me.DPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPChests.ForeColor = System.Drawing.Color.White
-        Me.DPChests.Image = CType(resources.GetObject("DPChests.Image"), System.Drawing.Image)
+        Me.DPChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.DPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.DPChests.Location = New System.Drawing.Point(39, 231)
         Me.DPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2352,7 +2362,7 @@ Partial Class Form1
         Me.EPChests.BackColor = System.Drawing.Color.Black
         Me.EPChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPChests.ForeColor = System.Drawing.Color.Yellow
-        Me.EPChests.Image = CType(resources.GetObject("EPChests.Image"), System.Drawing.Image)
+        Me.EPChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.EPChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EPChests.Location = New System.Drawing.Point(39, 207)
         Me.EPChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2369,7 +2379,7 @@ Partial Class Form1
         Me.HCChests.BackColor = System.Drawing.Color.Black
         Me.HCChests.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCChests.ForeColor = System.Drawing.Color.Yellow
-        Me.HCChests.Image = CType(resources.GetObject("HCChests.Image"), System.Drawing.Image)
+        Me.HCChests.Image = CType(resources.GetObject("Chests.Image"), System.Drawing.Image)
         Me.HCChests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HCChests.Location = New System.Drawing.Point(39, 183)
         Me.HCChests.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -2884,7 +2894,7 @@ Partial Class Form1
         '
         'Button12
         '
-        Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
+        Me.Button12.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button12.Location = New System.Drawing.Point(750, 250)
         Me.Button12.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button12.Name = "Button12"
@@ -2894,7 +2904,7 @@ Partial Class Form1
         '
         'Button11
         '
-        Me.Button11.Image = CType(resources.GetObject("Button11.Image"), System.Drawing.Image)
+        Me.Button11.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button11.Location = New System.Drawing.Point(750, 438)
         Me.Button11.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button11.Name = "Button11"
@@ -2904,7 +2914,7 @@ Partial Class Form1
         '
         'Button10
         '
-        Me.Button10.Image = CType(resources.GetObject("Button10.Image"), System.Drawing.Image)
+        Me.Button10.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button10.Location = New System.Drawing.Point(750, 205)
         Me.Button10.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button10.Name = "Button10"
@@ -2914,7 +2924,7 @@ Partial Class Form1
         '
         'Button9
         '
-        Me.Button9.Image = CType(resources.GetObject("Button9.Image"), System.Drawing.Image)
+        Me.Button9.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button9.Location = New System.Drawing.Point(660, 205)
         Me.Button9.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button9.Name = "Button9"
@@ -2924,7 +2934,7 @@ Partial Class Form1
         '
         'Button8
         '
-        Me.Button8.Image = CType(resources.GetObject("Button8.Image"), System.Drawing.Image)
+        Me.Button8.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button8.Location = New System.Drawing.Point(660, 160)
         Me.Button8.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button8.Name = "Button8"
@@ -2934,7 +2944,7 @@ Partial Class Form1
         '
         'Button7
         '
-        Me.Button7.Image = CType(resources.GetObject("Button7.Image"), System.Drawing.Image)
+        Me.Button7.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button7.Location = New System.Drawing.Point(750, 112)
         Me.Button7.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button7.Name = "Button7"
@@ -2944,7 +2954,7 @@ Partial Class Form1
         '
         'Button6
         '
-        Me.Button6.Image = CType(resources.GetObject("Button6.Image"), System.Drawing.Image)
+        Me.Button6.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button6.Location = New System.Drawing.Point(570, 438)
         Me.Button6.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button6.Name = "Button6"
@@ -2954,7 +2964,7 @@ Partial Class Form1
         '
         'Button5
         '
-        Me.Button5.Image = CType(resources.GetObject("Button5.Image"), System.Drawing.Image)
+        Me.Button5.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button5.Location = New System.Drawing.Point(480, 462)
         Me.Button5.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button5.Name = "Button5"
@@ -2964,7 +2974,7 @@ Partial Class Form1
         '
         'Button4
         '
-        Me.Button4.Image = CType(resources.GetObject("Button4.Image"), System.Drawing.Image)
+        Me.Button4.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button4.Location = New System.Drawing.Point(480, 438)
         Me.Button4.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button4.Name = "Button4"
@@ -2974,7 +2984,7 @@ Partial Class Form1
         '
         'Button3
         '
-        Me.Button3.Image = CType(resources.GetObject("Button3.Image"), System.Drawing.Image)
+        Me.Button3.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button3.Location = New System.Drawing.Point(725, 43)
         Me.Button3.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button3.Name = "Button3"
@@ -2984,7 +2994,7 @@ Partial Class Form1
         '
         'Button2
         '
-        Me.Button2.Image = CType(resources.GetObject("Button2.Image"), System.Drawing.Image)
+        Me.Button2.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
         Me.Button2.Location = New System.Drawing.Point(660, 112)
         Me.Button2.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.Button2.Name = "Button2"
@@ -3008,7 +3018,7 @@ Partial Class Form1
         Me.MMPrizes.BackColor = System.Drawing.Color.Black
         Me.MMPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMPrizes.ForeColor = System.Drawing.Color.White
-        Me.MMPrizes.Image = CType(resources.GetObject("MMPrizes.Image"), System.Drawing.Image)
+        Me.MMPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.MMPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MMPrizes.Location = New System.Drawing.Point(281, 279)
         Me.MMPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3025,7 +3035,7 @@ Partial Class Form1
         Me.IPPrizes.BackColor = System.Drawing.Color.Black
         Me.IPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPPrizes.ForeColor = System.Drawing.Color.White
-        Me.IPPrizes.Image = CType(resources.GetObject("IPPrizes.Image"), System.Drawing.Image)
+        Me.IPPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.IPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IPPrizes.Location = New System.Drawing.Point(281, 255)
         Me.IPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3042,7 +3052,7 @@ Partial Class Form1
         Me.TTPrizes.BackColor = System.Drawing.Color.Black
         Me.TTPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTPrizes.ForeColor = System.Drawing.Color.White
-        Me.TTPrizes.Image = CType(resources.GetObject("TTPrizes.Image"), System.Drawing.Image)
+        Me.TTPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.TTPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TTPrizes.Location = New System.Drawing.Point(281, 231)
         Me.TTPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3059,7 +3069,7 @@ Partial Class Form1
         Me.SWPrizes.BackColor = System.Drawing.Color.Black
         Me.SWPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWPrizes.ForeColor = System.Drawing.Color.White
-        Me.SWPrizes.Image = CType(resources.GetObject("SWPrizes.Image"), System.Drawing.Image)
+        Me.SWPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.SWPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SWPrizes.Location = New System.Drawing.Point(281, 207)
         Me.SWPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3075,7 +3085,7 @@ Partial Class Form1
         Me.TRBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.TRBoss.AutoSize = True
         Me.TRBoss.Enabled = False
-        Me.TRBoss.Image = CType(resources.GetObject("TRBoss.Image"), System.Drawing.Image)
+        Me.TRBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.TRBoss.Location = New System.Drawing.Point(317, 304)
         Me.TRBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3089,7 +3099,7 @@ Partial Class Form1
         Me.MMBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.MMBoss.AutoSize = True
         Me.MMBoss.Enabled = False
-        Me.MMBoss.Image = CType(resources.GetObject("MMBoss.Image"), System.Drawing.Image)
+        Me.MMBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.MMBoss.Location = New System.Drawing.Point(317, 280)
         Me.MMBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3103,7 +3113,7 @@ Partial Class Form1
         Me.IPBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.IPBoss.AutoSize = True
         Me.IPBoss.Enabled = False
-        Me.IPBoss.Image = CType(resources.GetObject("IPBoss.Image"), System.Drawing.Image)
+        Me.IPBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.IPBoss.Location = New System.Drawing.Point(317, 256)
         Me.IPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3117,7 +3127,7 @@ Partial Class Form1
         Me.TTBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.TTBoss.AutoSize = True
         Me.TTBoss.Enabled = False
-        Me.TTBoss.Image = CType(resources.GetObject("TTBoss.Image"), System.Drawing.Image)
+        Me.TTBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.TTBoss.Location = New System.Drawing.Point(317, 232)
         Me.TTBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3131,7 +3141,7 @@ Partial Class Form1
         Me.SWBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.SWBoss.AutoSize = True
         Me.SWBoss.Enabled = False
-        Me.SWBoss.Image = CType(resources.GetObject("SWBoss.Image"), System.Drawing.Image)
+        Me.SWBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.SWBoss.Location = New System.Drawing.Point(317, 208)
         Me.SWBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3145,7 +3155,7 @@ Partial Class Form1
         Me.SPBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.SPBoss.AutoSize = True
         Me.SPBoss.Enabled = False
-        Me.SPBoss.Image = CType(resources.GetObject("SPBoss.Image"), System.Drawing.Image)
+        Me.SPBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.SPBoss.Location = New System.Drawing.Point(115, 304)
         Me.SPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3159,7 +3169,7 @@ Partial Class Form1
         Me.PODBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.PODBoss.AutoSize = True
         Me.PODBoss.Enabled = False
-        Me.PODBoss.Image = CType(resources.GetObject("PODBoss.Image"), System.Drawing.Image)
+        Me.PODBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.PODBoss.Location = New System.Drawing.Point(115, 280)
         Me.PODBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.PODBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3173,7 +3183,7 @@ Partial Class Form1
         Me.HeraBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.HeraBoss.AutoSize = True
         Me.HeraBoss.Enabled = False
-        Me.HeraBoss.Image = CType(resources.GetObject("HeraBoss.Image"), System.Drawing.Image)
+        Me.HeraBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.HeraBoss.Location = New System.Drawing.Point(115, 256)
         Me.HeraBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3187,7 +3197,7 @@ Partial Class Form1
         Me.DPBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.DPBoss.AutoSize = True
         Me.DPBoss.Enabled = False
-        Me.DPBoss.Image = CType(resources.GetObject("DPBoss.Image"), System.Drawing.Image)
+        Me.DPBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.DPBoss.Location = New System.Drawing.Point(115, 232)
         Me.DPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3201,7 +3211,7 @@ Partial Class Form1
         Me.EPBoss.Appearance = System.Windows.Forms.Appearance.Button
         Me.EPBoss.AutoSize = True
         Me.EPBoss.Enabled = False
-        Me.EPBoss.Image = CType(resources.GetObject("EPBoss.Image"), System.Drawing.Image)
+        Me.EPBoss.Image = CType(resources.GetObject("Boss.Image"), System.Drawing.Image)
         Me.EPBoss.Location = New System.Drawing.Point(115, 208)
         Me.EPBoss.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.EPBoss.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3216,7 +3226,7 @@ Partial Class Form1
         Me.TRPrizes.BackColor = System.Drawing.Color.Black
         Me.TRPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRPrizes.ForeColor = System.Drawing.Color.White
-        Me.TRPrizes.Image = CType(resources.GetObject("TRPrizes.Image"), System.Drawing.Image)
+        Me.TRPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.TRPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TRPrizes.Location = New System.Drawing.Point(281, 303)
         Me.TRPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3233,7 +3243,7 @@ Partial Class Form1
         Me.SPPrizes.BackColor = System.Drawing.Color.Black
         Me.SPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPPrizes.ForeColor = System.Drawing.Color.White
-        Me.SPPrizes.Image = CType(resources.GetObject("SPPrizes.Image"), System.Drawing.Image)
+        Me.SPPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.SPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SPPrizes.Location = New System.Drawing.Point(79, 303)
         Me.SPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3250,7 +3260,7 @@ Partial Class Form1
         Me.PODPrizes.BackColor = System.Drawing.Color.Black
         Me.PODPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODPrizes.ForeColor = System.Drawing.Color.White
-        Me.PODPrizes.Image = CType(resources.GetObject("PODPrizes.Image"), System.Drawing.Image)
+        Me.PODPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.PODPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.PODPrizes.Location = New System.Drawing.Point(79, 279)
         Me.PODPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3267,7 +3277,7 @@ Partial Class Form1
         Me.TOHPrizes.BackColor = System.Drawing.Color.Black
         Me.TOHPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHPrizes.ForeColor = System.Drawing.Color.White
-        Me.TOHPrizes.Image = CType(resources.GetObject("TOHPrizes.Image"), System.Drawing.Image)
+        Me.TOHPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.TOHPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TOHPrizes.Location = New System.Drawing.Point(79, 255)
         Me.TOHPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3284,7 +3294,7 @@ Partial Class Form1
         Me.DPPrizes.BackColor = System.Drawing.Color.Black
         Me.DPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPPrizes.ForeColor = System.Drawing.Color.White
-        Me.DPPrizes.Image = CType(resources.GetObject("DPPrizes.Image"), System.Drawing.Image)
+        Me.DPPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.DPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.DPPrizes.Location = New System.Drawing.Point(79, 231)
         Me.DPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3301,7 +3311,7 @@ Partial Class Form1
         Me.EPPrizes.BackColor = System.Drawing.Color.Black
         Me.EPPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPPrizes.ForeColor = System.Drawing.Color.White
-        Me.EPPrizes.Image = CType(resources.GetObject("EPPrizes.Image"), System.Drawing.Image)
+        Me.EPPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.EPPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EPPrizes.Location = New System.Drawing.Point(79, 207)
         Me.EPPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3318,7 +3328,7 @@ Partial Class Form1
         Me.HCPrizes.BackColor = System.Drawing.Color.Black
         Me.HCPrizes.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCPrizes.ForeColor = System.Drawing.Color.White
-        Me.HCPrizes.Image = CType(resources.GetObject("HCPrizes.Image"), System.Drawing.Image)
+        Me.HCPrizes.Image = CType(resources.GetObject("Prizes.Image"), System.Drawing.Image)
         Me.HCPrizes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HCPrizes.Location = New System.Drawing.Point(79, 183)
         Me.HCPrizes.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3346,7 +3356,7 @@ Partial Class Form1
         '
         Me.DPMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.DPMap.AutoSize = True
-        Me.DPMap.Image = CType(resources.GetObject("DPMap.Image"), System.Drawing.Image)
+        Me.DPMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.DPMap.Location = New System.Drawing.Point(115, 232)
         Me.DPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.DPMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3359,7 +3369,7 @@ Partial Class Form1
         '
         Me.SPMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.SPMap.AutoSize = True
-        Me.SPMap.Image = CType(resources.GetObject("SPMap.Image"), System.Drawing.Image)
+        Me.SPMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.SPMap.Location = New System.Drawing.Point(115, 304)
         Me.SPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SPMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3385,7 +3395,7 @@ Partial Class Form1
         '
         Me.HeraMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.HeraMap.AutoSize = True
-        Me.HeraMap.Image = CType(resources.GetObject("HeraMap.Image"), System.Drawing.Image)
+        Me.HeraMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.HeraMap.Location = New System.Drawing.Point(115, 256)
         Me.HeraMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.HeraMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3398,7 +3408,7 @@ Partial Class Form1
         '
         Me.TRMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.TRMap.AutoSize = True
-        Me.TRMap.Image = CType(resources.GetObject("TRMap.Image"), System.Drawing.Image)
+        Me.TRMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.TRMap.Location = New System.Drawing.Point(317, 304)
         Me.TRMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TRMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3411,7 +3421,7 @@ Partial Class Form1
         '
         Me.MMMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.MMMap.AutoSize = True
-        Me.MMMap.Image = CType(resources.GetObject("MMMap.Image"), System.Drawing.Image)
+        Me.MMMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.MMMap.Location = New System.Drawing.Point(317, 280)
         Me.MMMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.MMMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3424,7 +3434,7 @@ Partial Class Form1
         '
         Me.IPMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.IPMap.AutoSize = True
-        Me.IPMap.Image = CType(resources.GetObject("IPMap.Image"), System.Drawing.Image)
+        Me.IPMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.IPMap.Location = New System.Drawing.Point(317, 256)
         Me.IPMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.IPMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3437,7 +3447,7 @@ Partial Class Form1
         '
         Me.TTMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.TTMap.AutoSize = True
-        Me.TTMap.Image = CType(resources.GetObject("TTMap.Image"), System.Drawing.Image)
+        Me.TTMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.TTMap.Location = New System.Drawing.Point(317, 232)
         Me.TTMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.TTMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3450,7 +3460,7 @@ Partial Class Form1
         '
         Me.SWMap.Appearance = System.Windows.Forms.Appearance.Button
         Me.SWMap.AutoSize = True
-        Me.SWMap.Image = CType(resources.GetObject("SWMap.Image"), System.Drawing.Image)
+        Me.SWMap.Image = CType(resources.GetObject("Map.Image"), System.Drawing.Image)
         Me.SWMap.Location = New System.Drawing.Point(317, 208)
         Me.SWMap.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
         Me.SWMap.MinimumSize = New System.Drawing.Size(24, 24)
@@ -3609,7 +3619,7 @@ Partial Class Form1
         Me.MMKeys.BackColor = System.Drawing.Color.Black
         Me.MMKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MMKeys.ForeColor = System.Drawing.Color.White
-        Me.MMKeys.Image = CType(resources.GetObject("MMKeys.Image"), System.Drawing.Image)
+        Me.MMKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.MMKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.MMKeys.Location = New System.Drawing.Point(281, 279)
         Me.MMKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3626,7 +3636,7 @@ Partial Class Form1
         Me.IPKeys.BackColor = System.Drawing.Color.Black
         Me.IPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.IPKeys.ForeColor = System.Drawing.Color.White
-        Me.IPKeys.Image = CType(resources.GetObject("IPKeys.Image"), System.Drawing.Image)
+        Me.IPKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.IPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.IPKeys.Location = New System.Drawing.Point(281, 255)
         Me.IPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3643,7 +3653,7 @@ Partial Class Form1
         Me.TTKeys.BackColor = System.Drawing.Color.Black
         Me.TTKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TTKeys.ForeColor = System.Drawing.Color.White
-        Me.TTKeys.Image = CType(resources.GetObject("TTKeys.Image"), System.Drawing.Image)
+        Me.TTKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.TTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TTKeys.Location = New System.Drawing.Point(281, 231)
         Me.TTKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3660,7 +3670,7 @@ Partial Class Form1
         Me.SWKeys.BackColor = System.Drawing.Color.Black
         Me.SWKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SWKeys.ForeColor = System.Drawing.Color.White
-        Me.SWKeys.Image = CType(resources.GetObject("SWKeys.Image"), System.Drawing.Image)
+        Me.SWKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.SWKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SWKeys.Location = New System.Drawing.Point(281, 207)
         Me.SWKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3677,7 +3687,7 @@ Partial Class Form1
         Me.TRKeys.BackColor = System.Drawing.Color.Black
         Me.TRKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TRKeys.ForeColor = System.Drawing.Color.White
-        Me.TRKeys.Image = CType(resources.GetObject("TRKeys.Image"), System.Drawing.Image)
+        Me.TRKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.TRKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TRKeys.Location = New System.Drawing.Point(281, 303)
         Me.TRKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3694,7 +3704,7 @@ Partial Class Form1
         Me.AGKeys.BackColor = System.Drawing.Color.Black
         Me.AGKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AGKeys.ForeColor = System.Drawing.Color.White
-        Me.AGKeys.Image = Global.RandoTracker.My.Resources.Resources.keysmall
+        Me.AGKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.AGKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.AGKeys.Location = New System.Drawing.Point(281, 183)
         Me.AGKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3712,7 +3722,7 @@ Partial Class Form1
         Me.GTKeys.BackColor = System.Drawing.Color.Black
         Me.GTKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GTKeys.ForeColor = System.Drawing.Color.White
-        Me.GTKeys.Image = CType(resources.GetObject("GTKeys.Image"), System.Drawing.Image)
+        Me.GTKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.GTKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.GTKeys.Location = New System.Drawing.Point(79, 327)
         Me.GTKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3730,7 +3740,7 @@ Partial Class Form1
         Me.SPKeys.BackColor = System.Drawing.Color.Black
         Me.SPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SPKeys.ForeColor = System.Drawing.Color.White
-        Me.SPKeys.Image = CType(resources.GetObject("SPKeys.Image"), System.Drawing.Image)
+        Me.SPKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.SPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.SPKeys.Location = New System.Drawing.Point(79, 303)
         Me.SPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3747,7 +3757,7 @@ Partial Class Form1
         Me.PODKeys.BackColor = System.Drawing.Color.Black
         Me.PODKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PODKeys.ForeColor = System.Drawing.Color.White
-        Me.PODKeys.Image = CType(resources.GetObject("PODKeys.Image"), System.Drawing.Image)
+        Me.PODKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.PODKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.PODKeys.Location = New System.Drawing.Point(79, 279)
         Me.PODKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3764,7 +3774,7 @@ Partial Class Form1
         Me.TOHKeys.BackColor = System.Drawing.Color.Black
         Me.TOHKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TOHKeys.ForeColor = System.Drawing.Color.White
-        Me.TOHKeys.Image = CType(resources.GetObject("TOHKeys.Image"), System.Drawing.Image)
+        Me.TOHKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.TOHKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.TOHKeys.Location = New System.Drawing.Point(79, 255)
         Me.TOHKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3781,7 +3791,7 @@ Partial Class Form1
         Me.DPKeys.BackColor = System.Drawing.Color.Black
         Me.DPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DPKeys.ForeColor = System.Drawing.Color.White
-        Me.DPKeys.Image = CType(resources.GetObject("DPKeys.Image"), System.Drawing.Image)
+        Me.DPKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.DPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.DPKeys.Location = New System.Drawing.Point(79, 231)
         Me.DPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3798,7 +3808,7 @@ Partial Class Form1
         Me.EPKeys.BackColor = System.Drawing.Color.Black
         Me.EPKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.EPKeys.ForeColor = System.Drawing.Color.White
-        Me.EPKeys.Image = CType(resources.GetObject("EPKeys.Image"), System.Drawing.Image)
+        Me.EPKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.EPKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.EPKeys.Location = New System.Drawing.Point(79, 207)
         Me.EPKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3815,7 +3825,7 @@ Partial Class Form1
         Me.HCKeys.BackColor = System.Drawing.Color.Black
         Me.HCKeys.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HCKeys.ForeColor = System.Drawing.Color.White
-        Me.HCKeys.Image = CType(resources.GetObject("HCKeys.Image"), System.Drawing.Image)
+        Me.HCKeys.Image = CType(resources.GetObject("Keys.Image"), System.Drawing.Image)
         Me.HCKeys.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.HCKeys.Location = New System.Drawing.Point(79, 183)
         Me.HCKeys.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
@@ -3829,86 +3839,236 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(412, 4)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(58, 13)
+        Me.Label2.Size = New System.Drawing.Size(50, 12)
         Me.Label2.TabIndex = 739
         Me.Label2.Text = "Sphere 0"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(412, 97)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.Size = New System.Drawing.Size(68, 12)
         Me.Label3.TabIndex = 740
         Me.Label3.Text = "LW Mainland"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(413, 190)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 13)
+        Me.Label4.Size = New System.Drawing.Size(68, 12)
         Me.Label4.TabIndex = 741
         Me.Label4.Text = "LW Wetlands"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(413, 235)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(83, 13)
+        Me.Label5.Size = New System.Drawing.Size(70, 12)
         Me.Label5.TabIndex = 742
         Me.Label5.Text = "DW Mainland"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(413, 304)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(112, 13)
+        Me.Label6.Size = New System.Drawing.Size(99, 12)
         Me.Label6.TabIndex = 743
         Me.Label6.Text = "Froggy World Tour"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(414, 373)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(97, 13)
+        Me.Label7.Size = New System.Drawing.Size(82, 12)
         Me.Label7.TabIndex = 744
         Me.Label7.Text = "Death Mountain"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Arial Narrow", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(681, 373)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(69, 13)
+        Me.Label8.Size = New System.Drawing.Size(59, 12)
         Me.Label8.TabIndex = 745
         Me.Label8.Text = "Macguffins"
+        '
+        'Button13
+        '
+        Me.Button13.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button13.Location = New System.Drawing.Point(750, 414)
+        Me.Button13.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(24, 24)
+        Me.Button13.TabIndex = 746
+        Me.Button13.UseVisualStyleBackColor = True
+        '
+        'Button14
+        '
+        Me.Button14.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button14.Location = New System.Drawing.Point(750, 390)
+        Me.Button14.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button14.Name = "Button14"
+        Me.Button14.Size = New System.Drawing.Size(24, 24)
+        Me.Button14.TabIndex = 747
+        Me.Button14.UseVisualStyleBackColor = True
+        '
+        'Button15
+        '
+        Me.Button15.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button15.Location = New System.Drawing.Point(570, 462)
+        Me.Button15.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button15.Name = "Button15"
+        Me.Button15.Size = New System.Drawing.Size(24, 24)
+        Me.Button15.TabIndex = 748
+        Me.Button15.UseVisualStyleBackColor = True
+        '
+        'Button16
+        '
+        Me.Button16.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button16.Location = New System.Drawing.Point(570, 136)
+        Me.Button16.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button16.Name = "Button16"
+        Me.Button16.Size = New System.Drawing.Size(24, 24)
+        Me.Button16.TabIndex = 749
+        Me.Button16.UseVisualStyleBackColor = True
+        '
+        'Button17
+        '
+        Me.Button17.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button17.Location = New System.Drawing.Point(725, 67)
+        Me.Button17.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button17.Name = "Button17"
+        Me.Button17.Size = New System.Drawing.Size(24, 24)
+        Me.Button17.TabIndex = 750
+        Me.Button17.UseVisualStyleBackColor = True
+        '
+        'Button18
+        '
+        Me.Button18.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button18.Location = New System.Drawing.Point(660, 319)
+        Me.Button18.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button18.Name = "Button18"
+        Me.Button18.Size = New System.Drawing.Size(24, 24)
+        Me.Button18.TabIndex = 751
+        Me.Button18.UseVisualStyleBackColor = True
+        '
+        'Button19
+        '
+        Me.Button19.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button19.Location = New System.Drawing.Point(570, 343)
+        Me.Button19.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button19.Name = "Button19"
+        Me.Button19.Size = New System.Drawing.Size(24, 24)
+        Me.Button19.TabIndex = 752
+        Me.Button19.UseVisualStyleBackColor = True
+        '
+        'Button20
+        '
+        Me.Button20.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button20.Location = New System.Drawing.Point(480, 160)
+        Me.Button20.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button20.Name = "Button20"
+        Me.Button20.Size = New System.Drawing.Size(24, 24)
+        Me.Button20.TabIndex = 753
+        Me.Button20.UseVisualStyleBackColor = True
+        '
+        'Button21
+        '
+        Me.Button21.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button21.Location = New System.Drawing.Point(570, 161)
+        Me.Button21.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button21.Name = "Button21"
+        Me.Button21.Size = New System.Drawing.Size(24, 24)
+        Me.Button21.TabIndex = 754
+        Me.Button21.UseVisualStyleBackColor = True
+        '
+        'Button22
+        '
+        Me.Button22.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button22.Location = New System.Drawing.Point(451, 205)
+        Me.Button22.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button22.Name = "Button22"
+        Me.Button22.Size = New System.Drawing.Size(24, 24)
+        Me.Button22.TabIndex = 755
+        Me.Button22.UseVisualStyleBackColor = True
+        '
+        'Button23
+        '
+        Me.Button23.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button23.Location = New System.Drawing.Point(750, 319)
+        Me.Button23.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(24, 24)
+        Me.Button23.TabIndex = 756
+        Me.Button23.UseVisualStyleBackColor = True
+        '
+        'Button24
+        '
+        Me.Button24.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button24.Location = New System.Drawing.Point(570, 250)
+        Me.Button24.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button24.Name = "Button24"
+        Me.Button24.Size = New System.Drawing.Size(24, 24)
+        Me.Button24.TabIndex = 757
+        Me.Button24.UseVisualStyleBackColor = True
+        '
+        'Button25
+        '
+        Me.Button25.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button25.Location = New System.Drawing.Point(570, 205)
+        Me.Button25.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(24, 24)
+        Me.Button25.TabIndex = 758
+        Me.Button25.UseVisualStyleBackColor = True
+        '
+        'Button26
+        '
+        Me.Button26.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button26.Location = New System.Drawing.Point(480, 319)
+        Me.Button26.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(24, 24)
+        Me.Button26.TabIndex = 759
+        Me.Button26.UseVisualStyleBackColor = True
+        '
+        'Button27
+        '
+        Me.Button27.Image = CType(resources.GetObject("Button1.Image"), System.Drawing.Image)
+        Me.Button27.Location = New System.Drawing.Point(570, 112)
+        Me.Button27.Margin = New System.Windows.Forms.Padding(2, 3, 2, 3)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(24, 24)
+        Me.Button27.TabIndex = 760
+        Me.Button27.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -3917,6 +4077,21 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer), CType(CType(48, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(779, 490)
+        Me.Controls.Add(Me.Button27)
+        Me.Controls.Add(Me.Button26)
+        Me.Controls.Add(Me.Button25)
+        Me.Controls.Add(Me.Button24)
+        Me.Controls.Add(Me.Button23)
+        Me.Controls.Add(Me.Button22)
+        Me.Controls.Add(Me.Button21)
+        Me.Controls.Add(Me.Button20)
+        Me.Controls.Add(Me.Button19)
+        Me.Controls.Add(Me.Button18)
+        Me.Controls.Add(Me.Button17)
+        Me.Controls.Add(Me.Button16)
+        Me.Controls.Add(Me.Button15)
+        Me.Controls.Add(Me.Button14)
+        Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.SPLabel)
         Me.Controls.Add(Me.PODLabel)
         Me.Controls.Add(Me.TOHLabel)
@@ -4456,4 +4631,19 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents Button13 As Button
+    Friend WithEvents Button14 As Button
+    Friend WithEvents Button15 As Button
+    Friend WithEvents Button16 As Button
+    Friend WithEvents Button17 As Button
+    Friend WithEvents Button18 As Button
+    Friend WithEvents Button19 As Button
+    Friend WithEvents Button20 As Button
+    Friend WithEvents Button21 As Button
+    Friend WithEvents Button22 As Button
+    Friend WithEvents Button23 As Button
+    Friend WithEvents Button24 As Button
+    Friend WithEvents Button25 As Button
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button27 As Button
 End Class

@@ -1,5 +1,5 @@
 Public Class Form1
-    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, Maze, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper As Integer
+    Dim Bow, Boomerang, Glove, Sword, Armor, Shield, Magic, MedallionCount, MireMedallion, TurtleMedallion, EPReward, DPReward, TOHReward, PODReward, SPReward, SWReward, TTReward, IPReward, MMReward, TRReward, CrystalCount, FairyCrystal, PendantCount, Available, AgaTree, Library, Maze, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper, GreenP, PyrFair, MimicCave, GYLedge, Aginah, MagicBat, PChest, FluteSpot, Witch, Hobo, BlackSmith, Catfish, Zora, DiggingGame, SickKid As Integer
     Dim Hookshot, Bombs, Powder, FireRod, IceRod, Bombos, Ether, Quake, Lamp, Hammer, Flute, Net, Book, Bottle, Somaria, Byrna, Cape, Mirror, Boots, Flippers, Pearl, Mushroom, Shovel, Aganhim, GreenPendant, TRAccess As Boolean
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -1530,6 +1530,80 @@ Public Class Form1
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
         Bumper = (Bumper + 1) Mod 3
         SwitchChestIcon(sender, e, Bumper)
+    End Sub
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        GreenP = (GreenP + 1) Mod 3
+        SwitchChestIcon(sender, e, GreenP)
+    End Sub
+
+    Private Sub Button14_Click(sender As Object, e As EventArgs) Handles Button14.Click
+        PyrFair = (PyrFair + 1) Mod 3
+        SwitchChestIcon(sender, e, PyrFair)
+    End Sub
+
+    Private Sub Button15_Click(sender As Object, e As EventArgs) Handles Button15.Click
+        MimicCave = (MimicCave + 1) Mod 3
+        SwitchChestIcon(sender, e, MimicCave)
+    End Sub
+
+    Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
+        GYLedge = (GYLedge + 1) Mod 3
+        SwitchChestIcon(sender, e, GYLedge)
+    End Sub
+
+    Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
+       Aginah = (Aginah + 1) Mod 3
+        SwitchChestIcon(sender, e, Aginah)
+    End Sub
+
+    Private Sub Button18_Click(sender As Object, e As EventArgs) Handles Button18.Click
+        MagicBat = (MagicBat + 1) Mod 3
+        SwitchChestIcon(sender, e, MagicBat)
+    End Sub
+
+    Private Sub Button19_Click(sender As Object, e As EventArgs) Handles Button19.Click
+        PChest = (PChest + 1) Mod 3
+        SwitchChestIcon(sender, e, PChest)
+    End Sub
+
+    Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
+        FluteSpot = (FluteSpot + 1) Mod 3
+        SwitchChestIcon(sender, e, FluteSpot)
+    End Sub
+
+    Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
+        Witch = (Witch + 1) Mod 3
+        SwitchChestIcon(sender, e, Witch)
+    End Sub
+
+    Private Sub Button22_Click(sender As Object, e As EventArgs) Handles Button22.Click
+        Hobo = (Hobo + 1) Mod 3
+        SwitchChestIcon(sender, e, Hobo)
+    End Sub
+    
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        BlackSmith = (BlackSmith + 1) Mod 3
+        SwitchChestIcon(sender, e, BlackSmith)
+    End Sub
+
+    Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
+        Catfish = (Catfish + 1) Mod 3
+        SwitchChestIcon(sender, e, Catfish)
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        Zora = (Zora + 1) Mod 3
+        SwitchChestIcon(sender, e, Zora)
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        DiggingGame = (DiggingGame + 1) Mod 3
+        SwitchChestIcon(sender, e, DiggingGame)
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        SickKid = (SickKid + 1) Mod 3
+        SwitchChestIcon(sender, e, SickKid)
     End Sub
 
     Public Sub HCCheck()
@@ -3808,12 +3882,37 @@ Public Class Form1
                 Check.Checked = False
             Next
             ' Resetting all scoutable items
-            For Each But as System.Windows.Forms.Button in {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12}
+            For Each But as System.Windows.Forms.Button in {Button1, Button2, Button3, Button4, Button5, Button6, Button7, Button8, Button9, Button10, Button11, Button12, Button13, Button14, Button15, Button16, Button17, Button18, Button19, Button20, Button21, Button22, Button23, Button24, Button25, Button26, Button27}
                 But.Image = My.Resources.chestmaybesmall
             Next
-            For Each Scout as Integer in {AgaTree, Library, Maze, SpecRock, EtherTab, Floating, DPLedge, BombosTab, ZoraLedge, LakeIsle, Pedestal, Bumper}
-                Scout = 0
-            Next
+            AgaTree = 0
+            Library = 0
+            Maze = 0
+            SpecRock = 0
+            EtherTab = 0
+            Floating = 0
+            DPLedge = 0
+            BombosTab = 0
+            ZoraLedge = 0
+            LakeIsle = 0
+            Pedestal = 0
+            Bumper = 0
+            GreenP = 0
+            PyrFair = 0
+            MimicCave = 0
+            GYLedge = 0
+            Aginah = 0
+            MagicBat = 0
+            PChest = 0
+            FluteSpot = 0
+            Witch = 0
+            Hobo = 0
+            BlackSmith = 0
+            Catfish = 0
+            Zora = 0
+            DiggingGame = 0
+            SickKid = 0
+                       
             ' Resetting all dungeons and overworld locations
             AllCheck()
         End If
