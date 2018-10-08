@@ -348,7 +348,7 @@ Public Class Form1
     End Function
 
     Private Function NormalDWEastAcc()
-        If Aganhim Or (Pearl And (Hammer or Flippers) And (Glove = 2 Or (Hammer And Glove))) Then
+        If Aganhim Or (Pearl And (Hammer or Flippers) And (Glove = 2 Or (Hammer And Glove > 0))) Then
             Return 1
         End If
         Return 0
@@ -378,7 +378,7 @@ Public Class Form1
     End Function
 
     Private Function InvertedLWAcc()
-        If Aganhim Or (Pearl And (Glove = 2 Or (Hammer And Glove))) Then
+        If Aganhim Or (Pearl And (Glove = 2 Or (Hammer And Glove > 0))) Then
             Return 1
         End If
         Return 0
@@ -830,7 +830,7 @@ Public Class Form1
         End If
 
         '' Zora - Glove or Flippers (can be faked)
-        If Flippers Or Glove Then
+        If Flippers Or Glove > 0 Then
             CCLR(LW36)
         Else
             CSQB(LW36)
@@ -928,7 +928,7 @@ Public Class Form1
             CCLR(DW2)
             CCLR(DW3)
             CCLR(DW4)
-            If Cape And Glove Then
+            If Cape And Glove > 0 Then
                 CCLR(DW7)
             Else
                 COFF(DW7)
@@ -1230,7 +1230,7 @@ Public Class Form1
         End If
 
         '' Zora - Glove or Flippers (can be faked)
-        If Pearl And (Flippers Or Glove) And InvertedLWAcc() Then
+        If Pearl And (Flippers Or Glove > 0) And InvertedLWAcc() Then
             CCLR(LW36)
         ElseIf Pearl And InvertedLWAcc() Then
             CSQB(LW36)
@@ -1239,7 +1239,7 @@ Public Class Form1
         End If
 
         '' Old Man - Death Mountain access and Lamp (can be dark-navved)
-        If Glove Or (Flute And Pearl And Aganhim) Then
+        If Glove > 0 Or (Flute And Pearl And Aganhim) Then
             If Lamp Then
                 CCLR(LW38)
             Else
@@ -1252,7 +1252,7 @@ Public Class Form1
         '' Spectacle Cave - Death Mountain access (Lamp prevents sequence break if Glove is used)
         If (Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc()) Then
             CCLR(LW39)
-        ElseIf Glove Or (Flute And Pearl And InvertedLWAcc()) Then
+        ElseIf Glove > 0 Or (Flute And Pearl And InvertedLWAcc()) Then
             CSQB(LW39)
         Else
            COFF(LW39)
@@ -1261,7 +1261,7 @@ Public Class Form1
         '' Spectacle Rock - Death Mountain access (Lamp prevents sequence break if Glove is used) and Mirror
         If Pearl And Hammer And (Glove = 2 Or Hookshot) And ((Glove > 0 And Lamp) Or (Flute And InvertedLWAcc())) Then
             CCLR(LW40)
-        ElseIf Pearl And Hammer And (Glove = 2 Or Hookshot) And (Glove Or (Flute And InvertedLWAcc())) Then
+        ElseIf Pearl And Hammer And (Glove = 2 Or Hookshot) And Glove > 0 Then
             CSQB(LW40)
         Else
             COFF(LW40)
@@ -1272,8 +1272,8 @@ Public Class Form1
         
         If Book And SLcheck(2) And Pearl And Hammer And (Glove = 2 Or Hookshot) And ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) Then
             CCLR(LW41)
-        ElseIf Book And SLcheck(2) And Pearl And Hammer And (Glove = 2 Or Hookshot) And Glove Then
-            CCLR(LW41)
+        ElseIf Book And SLcheck(2) And Pearl And Hammer And (Glove = 2 Or Hookshot) And Glove > 0 Then
+            CSQB(LW41)
         Else
             COFF(LW41)
         End If
@@ -1297,7 +1297,7 @@ Public Class Form1
                 COFF(LW45)
             End IF
             CCLR(LW44)
-        ElseIf (Glove = 2 Or (Hookshot And Pearl)) And Glove Then
+        ElseIf (Glove = 2 Or (Hookshot And Pearl)) And Glove > 0 Then
             If Pearl Then
                 If Bombs Then
                     CSQB(LW42)
@@ -1407,7 +1407,7 @@ Public Class Form1
         '' Superbunny Cave - Death Mountain access (Lamp prevents sequence break if Glove is used, Pearl prevents sequence break), Mitt, Hookshot or Hammer+Mirror
         If (Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc()) Then
             CCLR(DW14)
-        ElseIf Glove Then
+        ElseIf Glove > 0 Then
             CSQB(DW14)
         Else
             COFF(DW14)
@@ -1418,7 +1418,7 @@ Public Class Form1
            CCLR(DW15)
            DW15.TextAlign = ContentAlignment.MiddleCenter
            DW15Boots.Visible = False
-        ElseIf Hookshot And Glove Then
+        ElseIf Hookshot And Glove > 0 Then
            CSQB(DW15)
            DW15.TextAlign = ContentAlignment.MiddleCenter
            DW15Boots.Visible = False
