@@ -1287,8 +1287,10 @@ Public Class Form1
                 Else
                     CPCLR(LW42)
                 End If
-                If Pearl And Hammer Then
+                If Hammer Then
                     CCLR(LW45)
+                Else
+                    COFF(LW45)
                 End If
                 CCLR(LW43)
             Else   
@@ -1304,12 +1306,13 @@ Public Class Form1
                 Else
                     CPCLR(LW42)
                 End If
-                If Pearl And Hammer Then
+                If Hammer Then
                     CSQB(LW45)
+                Else
+                    COFF(LW45)
                 End If
-                CSQB(LW43)
-                
             End If
+            CSQB(LW43)
             CSQB(LW44)
         Else
             COFF(LW42)
