@@ -1937,7 +1937,7 @@ Public Class Form1
                 DPBorder.BackColor = Color.Black
                 DPBoss.Enabled = False
             End If
-        ElseIf ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 4 Then
+        ElseIf ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 7 Then
             If (Book Or (Glove = 2 And Flute And Mirror)) And (FireRod Or Lamp) And Glove > 0 And DPBigKey.Checked = True Then
                 If DPKeys.Text = 1 Then LCLR(DPLabel) Else LSQB(DPLabel)
                 DPBoss.Enabled = True
@@ -1977,7 +1977,7 @@ Public Class Form1
                 DPBorder.BackColor = Color.Black
                 DPBoss.Enabled = False
             End If
-      ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 7 Then
+      ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
             If Book And Pearl And InvertedLWAcc() And (FireRod Or Lamp) And Glove > 0 And DPBigKey.Checked = True Then
                 If DPKeys.Text = 1 Then LCLR(DPLabel) Else LSQB(DPLabel)
                 DPBoss.Enabled = True
@@ -2120,7 +2120,6 @@ Public Class Form1
             End If
             ElseIf ComboBox1.SelectedIndex = 7 Then
             If (Glove > 0 Or Flute) And Hammer And (Mirror Or Hookshot) And HeraBigKey.Checked = True Then
-                TOHLabel.ForeColor = Color.White
                 HeraBoss.Enabled = True
                 If Flute Or Lamp Then LCLR(TOHLabel) Else LSQB(TOHLabel)
                 TOHBorder.BackColor = Color.White
@@ -2362,7 +2361,7 @@ Public Class Form1
                 If Lamp And PODKeys.Text = 6 Then
                     LCLR(PODLabel)
                     PODBorder.BackColor = Color.White
-                ElseIf PODKeys.Text = 6 Then
+                ElseIf PODKeys.Text >= 4 Then
                     LSQB(PODLabel)
                     PODBorder.BackColor = Color.White
                 Else
@@ -2417,7 +2416,7 @@ Public Class Form1
                 If Lamp And PODKeys.Text = 6 Then
                     LCLR(PODLabel)
                     PODBorder.BackColor = Color.White
-                ElseIf PODKeys.Text = 6 Then
+                ElseIf PODKeys.Text >= 4 Then
                     LSQB(PODLabel)
                     PODBorder.BackColor = Color.White
                 Else
@@ -2660,8 +2659,7 @@ Public Class Form1
                 SWBoss.Enabled = False
                 SWBorder.BackColor = Color.Black
             Else
-                SWLabel.BackColor = Color.Red
-                SWLabel.ForeColor = Color.Black
+                LOFF(SWLabel)
                 SWBoss.Enabled = False
                 SWBorder.BackColor = Color.Black
             End If
@@ -2794,7 +2792,7 @@ Public Class Form1
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.White
             ElseIf Sword > 0 Or Somaria Or Byrna Then
-                LPCLR(TTLabel)
+                LSQB(TTLabel)
                 LChests(TTChests,7,Color.Yellow)
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.Black
@@ -2810,7 +2808,7 @@ Public Class Form1
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.White
             ElseIf TTBigKey.Checked = True And (Sword > 0 Or Somaria Or Byrna) Then
-                LSQB(TTLabel)
+                LPCLR(TTLabel)
                 TTBoss.Enabled = True
                 TTBorder.BackColor = Color.Black
             Else
@@ -2910,7 +2908,6 @@ Public Class Form1
         ElseIf ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 7 Then
             If Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck())) And Hammer Then
                 If Flippers And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria)) Then LCLR(IPLabel) Else LSQB(IPLabel)
-                IPLabel.ForeColor = Color.White
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
             ElseIf Pearl And Glove = 2 And Flippers And (FireRod Or (Bombos And SLcheck())) Then
@@ -3069,8 +3066,7 @@ Public Class Form1
                 MMBoss.Enabled = True
                 MMBorder.BackColor = Color.White
             ElseIf Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
+                LPCLR(MMLabel)
                 If Somaria Then MMBoss.Enabled = True Else MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
             ElseIf Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MMMedCheck() Then
@@ -3116,13 +3112,11 @@ Public Class Form1
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
             If (Mirror Or (Flute And Pearl)) And InvertedLWAcc() And SLcheck() And (Hookshot Or Boots) And MMMedCheck() And Somaria And MMBigKey.Checked = True Then
-                If Lamp Then MMLabel.BackColor = Color.Green Else MMLabel.BackColor = Color.Orange
-                MMLabel.ForeColor = Color.White
+                If Lamp Then LCLR(MMLabel) Else LSQB(MMLabel)
                 MMBoss.Enabled = True
                 MMBorder.BackColor = Color.White
             ElseIf (Mirror Or (Flute And Pearl)) And InvertedLWAcc() And (Hookshot Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
-                MMLabel.BackColor = Color.Yellow
-                MMLabel.ForeColor = Color.Black
+                LPCLR(MMLabel)
                 If Somaria Then MMBoss.Enabled = True Else MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
             ElseIf (Mirror Or (Flute And Pearl)) And InvertedLWAcc() And (Hookshot Or Boots) And MMMedCheck() Then
@@ -3327,7 +3321,7 @@ Public Class Form1
                 COFF(LW45)
             End If
         ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
-            If FireRod And IceRod And Somaria And ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And (TRMedCheck() Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
+            If FireRod And IceRod And Somaria And (Sword > 0 Or Hammer) And (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And (TRMedCheck() Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
                 TRAccess = True
                 If Lamp And ((SLcheck(3) Or Hammer) Or (SLcheck(2) And canExtendMagic()) Or (SLcheck() And canExtendMagic(4))) Then
                     LCLR(TRLabel)
@@ -3338,11 +3332,11 @@ Public Class Form1
                 End If
                 TRBorder.BackColor = Color.White
                 TRBoss.Enabled = True
-            ElseIf ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And MedallionCount > 0 And TurtleMedallion = 0 Then
+            ElseIf (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And MedallionCount > 0 And TurtleMedallion = 0 Then
                 TRAccess = True
                 LPCLR(TRLabel)
                 TRBorder.BackColor = Color.Black
-                If FireRod And IceRod And Somaria Then
+                If FireRod And IceRod And Somaria And (Sword > 0 Or Hammer) Then
                     LChests(TRChests,12,Color.Yellow)
                     TRBoss.Enabled = True
                 ElseIf FireRod And Somaria Then
@@ -3352,14 +3346,14 @@ Public Class Form1
                     LChests(TRChests,8,Color.Yellow)
                     TRBoss.Enabled = False
                 End If
-            ElseIf ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And FireRod Then
+            ElseIf (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And FireRod Then
                 TRAccess = True
                 If Somaria Then TRChests.Text = 11 Else TRChests.Text = 10
                 If Lamp Then TRChests.ForeColor = Color.White Else TRChests.ForeColor = Color.Yellow
                 LPCLR(TRLabel)
                 TRBoss.Enabled = False
                 TRBorder.BackColor = Color.Black
-            ElseIf ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
+            ElseIf (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
                 TRAccess = True
                 LChests(TRChests,9,Color.Yellow)
                 LPCLR(TRLabel)
@@ -3373,25 +3367,25 @@ Public Class Form1
                 TRBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
-            If ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And TRBigKey.Checked = True And TRKeys.Text >= 3 Then
+            If (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And (Sword > 0 Or Hammer) And FireRod And IceRod And TRBigKey.Checked = True And TRKeys.Text >= 1 Then
                 TRAccess = True
                 If Lamp And TRKeys.Text = 4 And ((SLcheck(3) Or Hammer) Or (SLcheck(2) And canExtendMagic()) Or (SLcheck() And canExtendMagic(4))) Then
                     LCLR(TRLabel)
                     TRBorder.BackColor = Color.White
-                ElseIf TRKeys.Text = 4 Then
+                ElseIf TRKeys.Text >= 2 Then
                     LSQB(TRLabel)
                     TRBorder.BackColor = Color.White
-                ElseIf TRKeys.Text = 3 Then
+                ElseIf TRKeys.Text < 2 Then
                     LPCLR(TRLabel)
                     TRBorder.BackColor = Color.Black
                 End If
                 TRBoss.Enabled = True
-            ElseIf ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And (Somaria Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And TurtleMedallion = 0 And MedallionCount > 0 Then
+            ElseIf (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And (Somaria Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And TurtleMedallion = 0 And MedallionCount > 0 Then
                 TRAccess = True
                 LPCLR(TRLabel)
                 TRBorder.BackColor = Color.Black
-                If FireRod And IceRod And Somaria Then TRBoss.Enabled = True Else TRBoss.Enabled = False
-            ElseIf ((Glove > 0 And Lamp) Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
+                If FireRod And IceRod And Somaria And (Sword > 0 Or Hammer) And TRBigKey.Checked = True And TRKeys.Text >= 1 Then TRBoss.Enabled = True Else TRBoss.Enabled = False
+            ElseIf (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) Then
                 TRAccess = True
                 LPCLR(TRLabel)
                 TRBoss.Enabled = False
