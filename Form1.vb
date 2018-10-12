@@ -3367,7 +3367,7 @@ Public Class Form1
                 TRBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
-            If (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And ((Somaria And TRMedCheck()) Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And (Sword > 0 Or Hammer) And FireRod And IceRod And TRBigKey.Checked = True And TRKeys.Text >= 1 Then
+            If FireRod And IceRod And Somaria And (Sword > 0 Or Hammer) And (Glove > 0 Or (Flute And Pearl And InvertedLWAcc())) And (TRMedCheck() Or (Mirror And (Glove = 2 Or (Pearl And Hookshot)))) And TRBigKey.Checked = True And TRKeys.Text >= 1 Then
                 TRAccess = True
                 If Lamp And TRKeys.Text = 4 And ((SLcheck(3) Or Hammer) Or (SLcheck(2) And canExtendMagic()) Or (SLcheck() And canExtendMagic(4))) Then
                     LCLR(TRLabel)
