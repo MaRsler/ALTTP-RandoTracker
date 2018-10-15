@@ -327,14 +327,14 @@ Public Class Form1
     End Function
         
     Private Function TRMedCheck()
-       If SLcheck() And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos) Or (TurtleMedallion = 2 And Ether) Or (TurtleMedallion = 3 And Quake)) Then
+       If SLcheck(1,0) And (MedallionCount = 3 Or (TurtleMedallion = 1 And Bombos) Or (TurtleMedallion = 2 And Ether) Or (TurtleMedallion = 3 And Quake)) Then
             Return 1
         End If
         Return 0
     End Function
 
     Private Function MMMedCheck()
-        If SLcheck() And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos) Or (MireMedallion = 2 And Ether) Or (MireMedallion = 3 And Quake)) Then
+        If SLcheck(1,0) And (MedallionCount = 3 Or (MireMedallion = 1 And Bombos) Or (MireMedallion = 2 And Ether) Or (MireMedallion = 3 And Quake)) Then
             Return 1
         End If
         Return 0
@@ -2879,7 +2879,7 @@ Public Class Form1
 
     Public Sub IPCheck()
         If ComboBox1.SelectedIndex = 0 Or ComboBox1.SelectedIndex = 2 Or ComboBox1.SelectedIndex = 6 Or ComboBox1.SelectedIndex = 8 Then
-            If Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck())) And Hammer And (Hookshot Or Somaria) Then
+            If Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck(1,0))) And Hammer And (Hookshot Or Somaria) Then
                 IPBoss.Enabled = True
                 If Flippers Then
                     LCLR(IPLabel)
@@ -2889,12 +2889,12 @@ Public Class Form1
                     LChests(IPChests,8,Color.Orange)
                 End If
                 IPBorder.BackColor = Color.White
-            ElseIf Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck())) And Hammer Then
+            ElseIf Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck(1,0))) And Hammer Then
                 LPCLR(IPLabel)
                 If Flippers Then LChests(IPChests,8,Color.Yellow) Else LChests(IPChests,8,Color.Orange)
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.Black
-            ElseIf Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck())) Then
+            ElseIf Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck(1,0))) Then
                 LPCLR(IPLabel)
                 If Flippers Then LChests(IPChests,7,Color.Yellow) Else LChests(IPChests,7,Color.Orange)
                 IPBoss.Enabled = False
@@ -2906,11 +2906,11 @@ Public Class Form1
                 IPBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 7 Then
-            If Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck())) And Hammer Then
+            If Pearl And Glove = 2 And (FireRod Or (Bombos And SLcheck(1,0))) And Hammer Then
                 If Flippers And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria)) Then LCLR(IPLabel) Else LSQB(IPLabel)
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
-            ElseIf Pearl And Glove = 2 And Flippers And (FireRod Or (Bombos And SLcheck())) Then
+            ElseIf Pearl And Glove = 2 And Flippers And (FireRod Or (Bombos And SLcheck(1,0))) Then
                 LPCLR(IPLabel)
                 IPBoss.Enabled = False
                 IPBorder.BackColor = Color.Black
@@ -2920,7 +2920,7 @@ Public Class Form1
                 IPBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
-            If (FireRod Or (Bombos And SLcheck())) And Hammer And Glove > 0 Then
+            If (FireRod Or (Bombos And SLcheck(1,0))) And Hammer And Glove > 0 Then
                 IPBoss.Enabled = True
                 If Flippers Then
                     LCLR(IPLabel)
@@ -2930,7 +2930,7 @@ Public Class Form1
                     LChests(IPChests,8,Color.Orange)
                 End If
                 IPBorder.BackColor = Color.White
-            ElseIf (FireRod Or (Bombos And SLcheck())) Then
+            ElseIf (FireRod Or (Bombos And SLcheck(1,0))) Then
                 If Hammer And Glove > 0 Then
                     LSQB(IPLabel)
                     LChests(IPChests,8,Color.Orange)
@@ -2949,11 +2949,11 @@ Public Class Form1
                 IPBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
-            If (FireRod Or (Bombos And SLcheck())) And Hammer And Glove > 0 Then
+            If (FireRod Or (Bombos And SLcheck(1,0))) And Hammer And Glove > 0 Then
                 If Flippers And ((IPKeys.Text = 2 And IPBigKey.Checked = True) Or (IPKeys.Text >= 1 And IPBigKey.Checked = True And Somaria)) Then LCLR(IPLabel) Else LSQB(IPLabel)
                 IPBoss.Enabled = True
                 IPBorder.BackColor = Color.White
-            ElseIf Flippers And (FireRod Or (Bombos And SLcheck())) Then
+            ElseIf Flippers And (FireRod Or (Bombos And SLcheck(1,0))) Then
                 LPCLR(IPLabel)
                 IPBoss.Enabled = False
                 IPBorder.BackColor = Color.Black
@@ -3049,7 +3049,7 @@ Public Class Form1
                     MMBoss.Enabled = False
                     LChests(MMChests,7,Color.Yellow)
                 End If
-            ElseIf Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MMMedCheck() Then
+            ElseIf Pearl And Glove = 2 And Flute And (Hookshot Or Boots) And MMMedCheck() Then
                 LPCLR(MMLabel)
                 LChests(MMChests,7,Color.White)
                 MMBoss.Enabled = False
@@ -3061,15 +3061,15 @@ Public Class Form1
                 MMBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 1 Or ComboBox1.SelectedIndex = 7 Then
-            If Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MMMedCheck() And Somaria And MMBigKey.Checked = True Then
+            If Pearl And Glove = 2 And Flute And (Hookshot Or Boots) And MMMedCheck() And Somaria And MMBigKey.Checked = True Then
                 If Lamp Then LCLR(MMLabel) Else LSQB(MMLabel)
                 MMBoss.Enabled = True
                 MMBorder.BackColor = Color.White
-            ElseIf Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
+            ElseIf Pearl And Glove = 2 And Flute And (Hookshot Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
                 LPCLR(MMLabel)
                 If Somaria Then MMBoss.Enabled = True Else MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
-            ElseIf Pearl And Glove = 2 And Flute And SLcheck() And (Hookshot Or Boots) And MMMedCheck() Then
+            ElseIf Pearl And Glove = 2 And Flute And (Hookshot Or Boots) And MMMedCheck() Then
                 LPCLR(MMLabel)
                 MMBoss.Enabled = False
                 MMBorder.BackColor = Color.Black
@@ -3079,7 +3079,7 @@ Public Class Form1
                 MMBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 3 Or ComboBox1.SelectedIndex = 5 Or ComboBox1.SelectedIndex = 9 Or ComboBox1.SelectedIndex = 11 Then
-            If ((Flute And Pearl And InvertedLWAcc()) Or (InvertedLWAcc() And Mirror)) And SLcheck() And (Hookshot Or Boots) And MMMedCheck() And Somaria Then
+            If (((Flute And Pearl) Or Mirror) And InvertedLWAcc()) And (Hookshot Or Boots) And MMMedCheck() And Somaria Then
                 MMBoss.Enabled = True
                 MMBorder.BackColor = Color.White
                 If Lamp Then
@@ -3089,7 +3089,7 @@ Public Class Form1
                     LSQB(MMLabel)
                     LChests(MMChests,8,Color.Orange)
                 End If
-            ElseIf ((Flute And Pearl And InvertedLWAcc()) Or (InvertedLWAcc() And Mirror)) And SLcheck() And (Hookshot  Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
+            ElseIf (((Flute And Pearl) Or Mirror) And InvertedLWAcc()) And SLcheck() And (Hookshot  Or Boots) And MedallionCount > 0 And MireMedallion = 0 Then
                 LPCLR(MMLabel)
                 MMBorder.BackColor = Color.Black
                 If Somaria Then
@@ -3099,7 +3099,7 @@ Public Class Form1
                     MMBoss.Enabled = False
                     LChests(MMChests,7,Color.Yellow)
                 End If
-            ElseIf ((Flute And Pearl And InvertedLWAcc()) Or (InvertedLWAcc() And Mirror)) And SLcheck() And (Hookshot Or Boots) And MMMedCheck() Then
+            ElseIf (((Flute And Pearl) Or Mirror) And InvertedLWAcc()) And (Hookshot Or Boots) And MMMedCheck() Then
                 LPCLR(MMLabel)
                 LChests(MMChests,7,Color.White)
                 MMBoss.Enabled = False
@@ -3111,7 +3111,7 @@ Public Class Form1
                 MMBorder.BackColor = Color.Black
             End If
         ElseIf ComboBox1.SelectedIndex = 4 Or ComboBox1.SelectedIndex = 10 Then
-            If (Mirror Or (Flute And Pearl)) And InvertedLWAcc() And SLcheck() And (Hookshot Or Boots) And MMMedCheck() And Somaria And MMBigKey.Checked = True Then
+            If (Mirror Or (Flute And Pearl)) And InvertedLWAcc() And (Hookshot Or Boots) And MMMedCheck() And Somaria And MMBigKey.Checked = True Then
                 If Lamp Then LCLR(MMLabel) Else LSQB(MMLabel)
                 MMBoss.Enabled = True
                 MMBorder.BackColor = Color.White
